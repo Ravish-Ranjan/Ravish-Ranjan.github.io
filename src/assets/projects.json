@@ -1,5 +1,10 @@
 [
 	{
+		"info": "Barcode Generator",
+		"href": "https://ravish-ranjan.github.io/barcode/",
+		"srcpath": "media/barcode.png",
+		"desc":"website to generate barcode"
+	},{
 		"info": "Markdown Previewer",
 		"href": "https://ravish-ranjan.github.io/markdown-previewer/",
 		"srcpath": "media/mdpreview.png",
