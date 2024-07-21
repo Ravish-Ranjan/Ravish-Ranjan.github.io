@@ -1,85 +1,80 @@
 [
 	{
+		"info": "Qrcode maker",
+		"href": "https://ravish-ranjan.github.io/qrcode/",
+		"srcpath": "media/qrcode.png",
+		"desc": " a site to make and customize your qrcodes"
+	},
+	{
 		"info": "Barcode Generator",
 		"href": "https://ravish-ranjan.github.io/barcode/",
 		"srcpath": "media/barcode.png",
-		"desc":"website to generate barcode"
-	},{
+		"desc": "website to generate barcode"
+	},
+	{
 		"info": "Markdown Previewer",
 		"href": "https://ravish-ranjan.github.io/markdown-previewer/",
 		"srcpath": "media/mdpreview.png",
-		"desc":"website to preview your markdown"
+		"desc": "website to preview your markdown"
 	},
 	{
 		"info": "Http-Codes",
 		"href": "https://ravish-ranjan.github.io/http-codes/",
 		"srcpath": "media/httpcodes.png",
-		"desc":"Ai generated image library of http status codes"
+		"desc": "Ai generated image library of http status codes"
 	},
 	{
 		"info": "Quotes",
 		"href": "https://ravish-ranjan.github.io/quotes/",
 		"srcpath": "media/quotes.png",
-		"desc":"a website for quotes which you can share with others"
+		"desc": "a website for quotes which you can share with others"
 	},
 	{
 		"info": "Fluke",
 		"href": "#work",
 		"srcpath": "media/fluke.png",
-		"desc":"a platform to watch and download movies and shows"
-	},
-	{
-		"info": "Qrcode aker",
-		"href": "#work",
-		"srcpath": "media/qrcode.png",
-		"desc":" a site to make and customize your qrcodes"
+		"desc": "a platform to watch and download movies and shows"
 	},
 	{
 		"info": "Notes",
 		"href": "#work",
 		"srcpath": "media/todo.gif",
-		"desc":"a notes app to make notes and to-do list and store them locally"
+		"desc": "a notes app to make notes and to-do list and store them locally"
 	},
 	{
 		"info": "Music PLayer",
 		"href": "#work",
 		"srcpath": "media/song_player.png",
-		"desc":"a designer music player to listen music"
+		"desc": "a designer music player to listen music"
 	},
 	{
 		"info": "Otp Recivever",
 		"href": "#work",
 		"srcpath": "media/otp_enter.png",
-		"desc":""
+		"desc": ""
 	},
 	{
 		"info": "Login Form",
 		"href": "#work",
 		"srcpath": "media/login_form.png",
-		"desc":""
+		"desc": ""
 	},
 	{
 		"info": "Control Panel",
 		"href": "#work",
 		"srcpath": "media/settings.png",
-		"desc":""
-	},
-	{
-		"info": "Marqee Bar",
-		"href": "#work",
-		"srcpath": "media/marq.png",
-		"desc":""
+		"desc": ""
 	},
 	{
 		"info": "Link Shortner",
 		"href": "#work",
 		"srcpath": "media/link.gif",
-		"desc":""
+		"desc": ""
 	},
 	{
 		"info": "Weather app",
 		"href": "#work",
 		"srcpath": "media/weather.gif",
-		"desc":""
+		"desc": ""
 	}
 ]

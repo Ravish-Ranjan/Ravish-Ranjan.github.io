@@ -7,22 +7,15 @@
 .box:focus {
 	color: transparent !important;
 }
-.page-block {
-	height: 90vh;
+.page-block.page-block {
+	min-height: 90vh;
 	width: 100%;
 }
 .home {
-	display: grid;
-	place-items: center;
-	/* padding-inline: 3%; */
-	background-image: url("../media/homeback2.jpg"),
-		url("../media/homeback.jpg");
-	background-size: cover;
-	background-position: center;
-	position: relative;
-	animation: scaleup linear;
-	animation-timeline: view();
-	animation-range-start: contain 30vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-image: linear-gradient(to bottom, #11111188, transparent);
 }
 .homecover {
 	display: flex;
@@ -30,14 +23,13 @@
 	justify-content: center;
 	align-items: flex-start;
 	height: 100%;
-	background-color: hsl(var(--colblack-val), 0.7);
-	width: 100%;
+	width: 60%;
 	padding-inline: 5vw;
 	gap: 0.5rem;
 	opacity: 1;
-	animation: brighten linear;
-	animation-timeline: view();
-	animation-range-start: contain 30vh;
+}
+.home > img {
+	width: 60%;
 }
 @keyframes scaleup {
 	to {
@@ -84,7 +76,22 @@
 }
 .title {
 	color: white;
-	font-size: 3rem;
+	font-size: 4rem;
+	background-clip: text;
+}
+.homecover > .title {
+	background-image: linear-gradient(to left, aquamarine, rgb(107, 0, 128));
+	color: transparent;
+	position: relative;
+}
+.homecover>.title:after{
+	content: "Hi, Ravish here";
+	display: block;
+	color: black;
+	position: absolute;
+	left: -5px;
+	top: 5px;
+	z-index: -1;
 }
 
 .bio {
@@ -95,8 +102,9 @@
 }
 .para {
 	color: #bbb;
-	width: min(75ch, 90%);
+	width: min(100ch, 130%);
 	text-wrap: pretty;
+	margin-bottom: 3rem;
 }
 
 @keyframes loadView {
@@ -118,14 +126,36 @@
 	}
 }
 @media only screen and (max-width: 600px) {
-	.marq-para > p {
-		font-size: 0.8rem;
+	.marq-para.marq-para > p {
+		font-size: 1rem;
 	}
 	.marq-para {
 		--ht: 100vh;
 	}
 	.brand > span {
 		font-size: 1rem;
+	}
+	.home{
+		flex-direction: column;
+	}
+	.homecover{
+		width: 100%;
+		margin-top: 5rem;
+	}
+	.homecover > .title{
+		font-size: 2.7rem;
+		margin-bottom: 2rem;
+	}
+	.para{
+		font-size: .7rem;
+		width: 90%;
+		margin-bottom: 0;
+	}
+	.home>img{
+		width: 100%;
+	}
+	.bio>span{
+		font-size: .8rem;
 	}
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {

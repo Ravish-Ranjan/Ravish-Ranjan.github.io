@@ -3,8 +3,7 @@
 	--col2-val: 0, 0%, 100%;
 }
 .marq-bar-outer {
-	width: min(750px, 60vw);
-	width: 85vw;
+	width: 100vw;
 	display: flex;
 	gap: 1rem;
 	background-color: hsl(var(--col2-val), 0.1);
@@ -16,11 +15,9 @@
 }
 .marq-bar {
 	display: flex;
+	width: 100%;
+	justify-content: center;
 	gap: 1rem;
-	transform: translateX(0);
-	animation: scroll var(--anim-speed) infinite linear var(--anim-direc, forwards);
-	/* animation-timeline: scroll(); */
-	/* animation-range: contain; */
 }
 .marq-bar-outer[data-anim-direc="left"] .marq-bar {
 	--anim-direc: forwards;
@@ -40,21 +37,10 @@
 .marq-bit {
 	padding: 0.4rem 1rem;
 	color: white;
-	background-color: hsl(218, 10%, 35%);
+	background-color: #202020;
 	border-radius: 0.3rem;
 	text-transform: uppercase;
 	font-size: 1rem;
-}
-@media (prefers-reduced-motion: reduce) {
-	.marq-bar {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 1rem;
-		animation: none;
-	}
-	.marq-bar-outer:after {
-		display: none;
-	}
 }
 @media only screen and (max-width: 600px) {
 	.marq-bit{

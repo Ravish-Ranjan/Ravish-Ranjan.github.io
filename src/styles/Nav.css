@@ -11,7 +11,7 @@
 	height: 10vh;
 	width: 100%;
 	z-index: 1;
-	background-color: hsl(var(--colbrand-val));
+	background-color: #11111188;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

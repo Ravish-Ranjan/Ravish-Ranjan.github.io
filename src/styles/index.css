@@ -1,5 +1,5 @@
 :root {
-	--colbrand-val: 222, 16%, 12%;
+	--colbrand-val: 0, 0%, 14%;
 	--prog-col: 156, 72%, 67%;
 	--col:hsl(218, 14%, 16%);
 	--def-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -13,19 +13,33 @@
 	/* font-family: var(--def-font); */
 }
 body {
-	background-color: var(--colbrand-val);
+	background-color: hsl(var(--colbrand-val)) !important;
 	scrollbar-gutter: auto;
 	font-size: 20px;
 }
 #root {
-	background-color: hsl(var(--colbrand-val));
+	background-color: transparent;
+	overflow-x: hidden;
 	min-height: 100dvh;
+	position: relative;
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
 	scrollbar-gutter: auto;
+	z-index: 0;
+}
+@keyframes rot {
+	from {
+		transform: rotate(0deg) scaleX(1) scaleY(1.3);
+	}
+	50% {
+		transform: rotate(180deg) scaleX(1.3) scaleY(1);
+	}
+	to {
+		transform: rotate(360deg) scaleX(1) scaleY(1.3);
+	}
 }
 * {
 	scrollbar-width: thin;

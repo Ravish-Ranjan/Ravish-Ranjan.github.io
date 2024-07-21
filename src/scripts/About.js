@@ -4,20 +4,23 @@ import "../styles/About.css";
 import "../styles/Oswald.css";
 
 const skills = [
-	"c",
-	"c++",
-	"python",
-	"java",
+	"react",
+	"nodejs",
+	"mongodb",
+	"typescript",
 	"html",
 	"css",
+	"mysql",
+	"javascript",
+	"python",
+	"java",
 	"js",
 	"php",
-	"mysql",
 ];
 
 export function About() {
 	return (
-		<div className="about" id="about">
+		<div className="about page-block" id="about">
 			<Marq itemList={skills} direction="left" speed="slow" />
 			<div className="marq-para oswald-font-300">
 				<p>
