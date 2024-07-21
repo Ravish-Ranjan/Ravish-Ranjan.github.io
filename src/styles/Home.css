@@ -136,7 +136,7 @@
 		font-size: 1rem;
 	}
 	.home {
-		flex-direction: column;
+		flex-direction: column-reverse;
 	}
 	.homecover {
 		width: 100%;
