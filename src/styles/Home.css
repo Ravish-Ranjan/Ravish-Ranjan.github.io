@@ -137,10 +137,10 @@
 	}
 	.home {
 		flex-direction: column-reverse;
+		justify-content: flex-start;
 	}
 	.homecover {
 		width: 100%;
-		margin-top: 5rem;
 	}
 	.homecover > .title {
 		font-size: 3rem;
@@ -152,6 +152,7 @@
 		margin-bottom: 0;
 	}
 	.home > img {
+		margin-top: 2rem;
 		width: 100%;
 	}
 	.bio {
