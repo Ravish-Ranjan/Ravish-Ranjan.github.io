@@ -84,7 +84,7 @@
 	color: transparent;
 	position: relative;
 }
-.homecover>.title:after{
+.homecover > .title:after {
 	content: "Hi, Ravish here";
 	display: block;
 	color: black;
@@ -135,27 +135,33 @@
 	.brand > span {
 		font-size: 1rem;
 	}
-	.home{
+	.home {
 		flex-direction: column;
 	}
-	.homecover{
+	.homecover {
 		width: 100%;
 		margin-top: 5rem;
 	}
-	.homecover > .title{
-		font-size: 2.7rem;
+	.homecover > .title {
+		font-size: 3rem;
 		margin-bottom: 2rem;
 	}
-	.para{
-		font-size: .7rem;
-		width: 90%;
+	.para {
+		font-size: 0.8rem;
+		width: 100%;
 		margin-bottom: 0;
 	}
-	.home>img{
+	.home > img {
 		width: 100%;
 	}
-	.bio>span{
-		font-size: .8rem;
+	.bio {
+		width: 100%;
+	}
+	.bio > span {
+		font-size: 0.8rem;
+	}
+	.brand.brand > img {
+		height: 5vh;
 	}
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
