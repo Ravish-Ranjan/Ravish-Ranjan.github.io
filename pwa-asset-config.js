@@ -10,13 +10,13 @@ const config = {
 	startUrl: "/",
 	icons: [
 		{
-			src: "./public/logo.svg", // Your original icon
+			src: "logo.png", // Your original icon
 			sizes: [16, 32, 96, 128, 192, 256, 384, 512],
 		},
 	],
 	splashScreens: [
 		{
-			src: "./public/logo.svg", // Your original splash screen
+			src: "logo.png", // Your original splash screen
 			sizes: [
 				{ width: 320, height: 480 },
 				{ width: 375, height: 667 },
