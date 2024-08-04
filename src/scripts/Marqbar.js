@@ -1,6 +1,6 @@
 import "../styles/Marqbar.css";
 
-export function Marq({ itemList, direction, speed }) {
+export function Marq({ itemList }) {
 	const listrender = itemList.map((val, i) => (
 		<span key={i} className="marq-bit">
 			{val}
@@ -10,8 +10,6 @@ export function Marq({ itemList, direction, speed }) {
 	return (
 		<div
 			className="marq-bar-outer inline-shadow"
-			data-anim-direc={direction}
-			data-anim-speed={speed}
 		>
 			<div className="marq-bar oswald-font">{listrender}</div>
 		</div>

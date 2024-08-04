@@ -1,6 +1,5 @@
 import { Img } from "./Imgblk";
 import information from "../assets/projects.json";
-import "../styles/Work.css";
 
 export function Work() {
 	return (

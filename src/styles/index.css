@@ -16,6 +16,7 @@ body {
 	background-color: hsl(var(--colbrand-val)) !important;
 	scrollbar-gutter: auto;
 	font-size: 20px;
+	overflow-x: hidden;
 }
 #root {
 	background-color: transparent;

@@ -19,21 +19,6 @@
 	justify-content: center;
 	gap: 1rem;
 }
-.marq-bar-outer[data-anim-direc="left"] .marq-bar {
-	--anim-direc: forwards;
-}
-.marq-bar-outer[data-anim-direc="right"] .marq-bar {
-	--anim-direc: reverse;
-}
-.marq-bar-outer[data-anim-speed="slow"] .marq-bar {
-	--anim-speed: 15s;
-}
-.marq-bar-outer[data-anim-speed="mid"] .marq-bar {
-	--anim-speed: 10s;
-}
-.marq-bar-outer[data-anim-speed="fast"] .marq-bar {
-	--anim-speed: 7s;
-}
 .marq-bit {
 	padding: 0.4rem 1rem;
 	color: white;

@@ -137,7 +137,8 @@
 	}
 	.home {
 		flex-direction: column-reverse;
-		justify-content: flex-start;
+		gap: 3rem;
+		justify-content: flex-end;
 	}
 	.homecover {
 		width: 100%;
@@ -153,7 +154,7 @@
 	}
 	.home > img {
 		margin-top: 2rem;
-		width: 100%;
+		width: 120%;
 	}
 	.bio {
 		width: 100%;
@@ -203,4 +204,59 @@
 	.para {
 		font-size: 2rem;
 	}
+}
+.prog.container-fluid {
+	height: 3px;
+	background-color: hsl(var(--hr-col));
+	transform: scaleX(0);
+	transform-origin: left;
+	animation: prog linear;
+	animation-timeline: scroll();
+	position: sticky;
+	top: 0;
+	z-index: 2;
+}
+@keyframes prog {
+	to {
+		transform: scaleX(1);
+	}
+}
+.text-center.p-3 {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+#work {
+	display: grid;
+	place-items: center;
+}
+.block-title {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	margin-block: 1rem 0;
+}
+.block-title > span {
+	color: white;
+	font-size: 3rem;
+	width: 10%;
+	z-index: 1;
+	position: relative;
+	padding-inline: 0.5rem;
+	background-color: hsl(var(--colbrand-val));
+}
+.block-title:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	height: 0.25rem;
+	width: 100%;
+	background-color: hsl(var(--hr-col));
+	z-index: 0;
+}
+.gallery {
+	width: 98%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	padding: 1rem;
 }
