@@ -1,0 +1,34 @@
+.box {
+	flex: 1 0 300px;
+	min-width: 100px;
+	min-height: 20vh;
+	display: flex;
+	justify-content: flex-start;
+	gap: 1rem;
+	align-items: center;
+	outline: 0.15rem gray solid;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	padding: 0 0.5rem;
+	transition: all 0.1s ease-in-out;
+}
+.box:hover,
+.box:focus {
+	outline-color: hsl(var(--hr-col));
+	outline-width: 0.3rem;
+}
+.box img {
+	object-fit: cover;
+	width: 18vh;
+	aspect-ratio: 1/1;
+}
+.box .title {
+	font-size: 1.25em;
+	text-decoration: none !important;
+}
+
+.box .description {
+	font-size: 0.75em;
+	color: rgb(199, 199, 199);
+	text-decoration: none !important;
+}

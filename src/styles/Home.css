@@ -1,0 +1,262 @@
+:root {
+	--colblack-val: 0, 0%, 0%;
+	--hr-col: 200 70% 70%;
+}
+.box,
+.box:hover,
+.box:focus {
+	color: transparent !important;
+}
+.page-block.page-block {
+	min-height: 90vh;
+	width: 100%;
+}
+.home {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-image: linear-gradient(to bottom, #11111188, transparent);
+}
+.homecover {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	height: 100%;
+	width: 60%;
+	padding-inline: 5vw;
+	gap: 0.5rem;
+	opacity: 1;
+}
+.home > img {
+	width: 60%;
+}
+@keyframes scaleup {
+	to {
+		background-size: 150%;
+	}
+}
+@keyframes brighten {
+	to {
+		background-color: hsl(var(--colblack-val), 0.3);
+		opacity: 0;
+	}
+}
+.inline-shadow:after {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	inset: 0;
+	--shadow-width: 3rem;
+	background-image: linear-gradient(
+		to right,
+		#23272e 0%,
+		transparent var(--shadow-width),
+		transparent calc(100% - var(--shadow-width)),
+		#23272e 100%
+	);
+}
+.block-shadow:after {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	inset: 0;
+	--shadow-width: 3rem;
+	background-image: linear-gradient(
+		to bottom,
+		#23272e 0%,
+		transparent var(--shadow-width),
+		transparent calc(100% - var(--shadow-width)),
+		#23272e 100%
+	);
+}
+.title {
+	color: white;
+	font-size: 4rem;
+	background-clip: text;
+}
+.homecover > .title {
+	background-image: linear-gradient(to left, aquamarine, rgb(107, 0, 128));
+	color: transparent;
+	position: relative;
+}
+.homecover > .title:after {
+	content: "Hi, Ravish here";
+	display: block;
+	color: black;
+	position: absolute;
+	left: -5px;
+	top: 5px;
+	z-index: -1;
+}
+
+.bio {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	color: hsl(var(--hr-col));
+}
+.para {
+	color: #bbb;
+	width: min(100ch, 130%);
+	text-wrap: pretty;
+	margin-bottom: 3rem;
+}
+
+@keyframes loadView {
+	0%,
+	100% {
+		opacity: 0.5;
+		scale: 0.8;
+	}
+	30%,
+	70% {
+		opacity: 1;
+		scale: 1;
+	}
+}
+@keyframes outline {
+	30%,
+	70% {
+		filter: contrast(1.2);
+	}
+}
+@media only screen and (max-width: 600px) {
+	.marq-para.marq-para > p {
+		font-size: 1rem;
+	}
+	.marq-para {
+		--ht: 100vh;
+	}
+	.brand > span {
+		font-size: 1rem;
+	}
+	.home {
+		flex-direction: column-reverse;
+		gap: 3rem;
+		justify-content: flex-end;
+	}
+	.homecover {
+		width: 100%;
+	}
+	.homecover > .title {
+		font-size: 3rem;
+		margin-bottom: 2rem;
+	}
+	.para {
+		font-size: 0.8rem;
+		width: 100%;
+		margin-bottom: 0;
+	}
+	.home > img {
+		margin-top: 2rem;
+		width: 120%;
+	}
+	.bio {
+		width: 100%;
+	}
+	.bio > span {
+		font-size: 0.8rem;
+	}
+	.brand.brand > img {
+		height: 5vh;
+	}
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+	.marq-para > p {
+		font-size: 0.8rem;
+	}
+	.marq-para {
+		--ht: 120vh;
+	}
+	.brand > span {
+		font-size: 0.8rem;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.marq-para {
+		--ht: 120vh;
+	}
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.marq-para {
+		--ht: 130vh;
+	}
+}
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+	.title {
+		font-size: 3rem;
+	}
+	.bio,
+	.para {
+		font-size: 1rem;
+	}
+}
+@media only screen and (min-width: 1440px) {
+	.title {
+		font-size: 5rem;
+	}
+	.bio,
+	.para {
+		font-size: 2rem;
+	}
+}
+.prog.container-fluid {
+	height: 3px;
+	background-color: hsl(var(--hr-col));
+	transform: scaleX(0);
+	transform-origin: left;
+	animation: prog linear;
+	animation-timeline: scroll();
+	position: sticky;
+	top: 0;
+	z-index: 2;
+}
+@keyframes prog {
+	to {
+		transform: scaleX(1);
+	}
+}
+.text-center.p-3 {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+#work {
+	display: grid;
+	place-items: center;
+}
+.block-title {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	margin-block: 1rem 0;
+}
+.block-title > span {
+	color: white;
+	font-size: 3rem;
+	width: 10%;
+	z-index: 1;
+	position: relative;
+	padding-inline: 0.5rem;
+	background-color: hsl(var(--colbrand-val));
+}
+.block-title:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	height: 0.25rem;
+	width: 100%;
+	background-color: hsl(var(--hr-col));
+	z-index: 0;
+}
+.gallery {
+	width: 98%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	padding: 1rem;
+}
