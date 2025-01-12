@@ -24,6 +24,12 @@
         "desc": "website to generate barcode"
     },
     {
+        "info": "RChats",
+        "href": "https://rchats.onrender.com",
+        "srcpath": "media/rchats.png",
+        "desc": "an full-stack(MERN) Realtime chat app"
+    },
+    {
         "info": "Markdown Previewer",
         "href": "https://ravish-ranjan.github.io/markdown-previewer/",
         "srcpath": "media/mdpreview.png",
