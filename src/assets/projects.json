@@ -48,12 +48,6 @@
         "desc": "a platform to watch and download movies and shows"
     },
     {
-        "info": "Notes",
-        "href": "#work",
-        "srcpath": "media/todo.gif",
-        "desc": "a notes app to make notes and to-do list and store them locally"
-    },
-    {
         "info": "Music PLayer",
         "href": "#work",
         "srcpath": "media/song_player.png",
@@ -66,12 +60,6 @@
         "desc": ""
     },
     {
-        "info": "Login Form",
-        "href": "#work",
-        "srcpath": "media/login_form.png",
-        "desc": ""
-    },
-    {
         "info": "Control Panel",
         "href": "#work",
         "srcpath": "media/settings.png",
@@ -81,12 +69,6 @@
         "info": "Link Shortner",
         "href": "#work",
         "srcpath": "media/link.gif",
-        "desc": ""
-    },
-    {
-        "info": "Weather app",
-        "href": "#work",
-        "srcpath": "media/weather.gif",
         "desc": ""
     }
 ]
