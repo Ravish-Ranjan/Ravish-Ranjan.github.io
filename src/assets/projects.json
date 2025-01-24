@@ -1,7 +1,7 @@
 [
     {
         "info": "Notes",
-        "href": "https://notes-ith2.onrender.com",
+        "href": "https://notes-production-c0fa.up.railway.app",
         "srcpath": "media/notes.png",
         "desc": "an full-stack(MERN) notes web PWA app"
     },
@@ -25,7 +25,7 @@
     },
     {
         "info": "RChats",
-        "href": "https://rchats.onrender.com",
+        "href": "https://rchats-production.up.railway.app",
         "srcpath": "media/rchats.png",
         "desc": "an full-stack(MERN) Realtime chat app"
     },
