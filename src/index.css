@@ -1,0 +1,209 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+/* *,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+} */
+html,
+body {
+	width: 100%;
+	min-height: 100dvh;
+	display: grid;
+	place-items: center;
+	scroll-behavior: smooth;
+}
+
+#root {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	gap: 2rem;
+}
+
+.nav-links:hover a:not(:hover) {
+	color: #525256;
+	transition: 0.25s ease-in-out;
+}
+
+.hero {
+	display: flex;
+	flex-direction: row;
+}
+
+@media screen and (max-width: 640px) {
+	.hero {
+		flex-direction: column-reverse;
+	}
+}
+@media screen and (min-width: 641px) {
+	.hero {
+		flex-direction: row;
+	}
+}
+
+.title-custom {
+	background-color: var(--background);
+}
+
+.background-custom {
+	background-color: color-mix(
+		in srgb,
+		var(--background) 90%,
+		var(--foreground) 10%
+	);
+}
+
+.background-custom-inverted {
+	background-color: color-mix(
+		in srgb,
+		var(--background) 95%,
+		var(--foreground) 5%
+	);
+}
+
+@media (prefers-color-scheme: dark) {
+	.nav-links:hover a:not(:hover) {
+		color: #95959c;
+		transition: 0.25s ease-in-out;
+	}
+}
+
+.marq-para::first-letter {
+	color: var(--prog-col);
+	font-size: 3rem;
+	line-height: 100%;
+}
+.lifted-bg {
+	box-shadow: 0.5rem 0.5rem rgb(43, 43, 43);
+}
+.lifted {
+	position: relative;
+}
+.lifted:after {
+	content: "Hi, Ravish here";
+	display: block;
+	color: black;
+	position: absolute;
+	left: -2.5px;
+	top: 2.5px;
+	z-index: -1;
+}
+
+:root {
+	--background: hsl(0, 0%, 76%);
+	--foreground: hsl(240 10% 3.9%);
+	--card: hsl(0 0% 100%);
+	--card-foreground: hsl(240 10% 3.9%);
+	--popover: hsl(0 0% 100%);
+	--popover-foreground: hsl(240 10% 3.9%);
+	--primary: hsl(240 5.9% 10%);
+	--primary-foreground: hsl(0 0% 98%);
+	--secondary: hsl(240 4.8% 95.9%);
+	--secondary-foreground: hsl(240 5.9% 10%);
+	--muted: hsl(240 4.8% 95.9%);
+	--muted-foreground: hsl(240 3.8% 46.1%);
+	--accent: hsl(240 4.8% 95.9%);
+	--accent-foreground: hsl(240 5.9% 10%);
+	--destructive: hsl(0 84.2% 60.2%);
+	--destructive-foreground: hsl(0 0% 98%);
+	--border: hsl(240 5.9% 90%);
+	--input: hsl(240 5.9% 90%);
+	--ring: hsl(240 10% 3.9%);
+	--chart-1: hsl(12 76% 61%);
+	--chart-2: hsl(173 58% 39%);
+	--chart-3: hsl(197 37% 24%);
+	--chart-4: hsl(43 74% 66%);
+	--chart-5: hsl(27 87% 67%);
+	--radius: 0.6rem;
+	--prog-col: oklch(0.391 0.09 240.876);
+}
+
+.dark {
+	--background: hsl(0, 0%, 14%);
+	--foreground: hsl(0 0% 98%);
+	--card: hsl(240 10% 3.9%);
+	--card-foreground: hsl(0 0% 98%);
+	--popover: hsl(240 10% 3.9%);
+	--popover-foreground: hsl(0 0% 98%);
+	--primary: hsl(0 0% 98%);
+	--primary-foreground: hsl(240 5.9% 10%);
+	--secondary: hsl(240 3.7% 15.9%);
+	--secondary-foreground: hsl(0 0% 98%);
+	--muted: hsl(240 3.7% 15.9%);
+	--muted-foreground: hsl(240 5% 64.9%);
+	--accent: hsl(240 3.7% 15.9%);
+	--accent-foreground: hsl(0 0% 98%);
+	--destructive: hsl(0 62.8% 30.6%);
+	--destructive-foreground: hsl(0 0% 98%);
+	--border: hsl(240 3.7% 15.9%);
+	--input: hsl(240 3.7% 15.9%);
+	--ring: hsl(240 4.9% 83.9%);
+	--chart-1: hsl(220 70% 50%);
+	--chart-2: hsl(160 60% 45%);
+	--chart-3: hsl(30 80% 55%);
+	--chart-4: hsl(280 65% 60%);
+	--chart-5: hsl(340 75% 55%);
+	--prog-col: oklch(0.828 0.111 230.318);
+}
+
+#blob {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	aspect-ratio: 1 / 1;
+	background-color: #fff;
+	z-index: 0;
+	border-radius: 6rem;
+	animation: rot 10s linear infinite;
+	background-image: linear-gradient(to right, #7fffd4, purple);
+	filter: blur(100px);
+}
+@theme inline {
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-card: var(--card);
+	--color-card-foreground: var(--card-foreground);
+	--color-popover: var(--popover);
+	--color-popover-foreground: var(--popover-foreground);
+	--color-primary: var(--primary);
+	--color-primary-foreground: var(--primary-foreground);
+	--color-secondary: var(--secondary);
+	--color-secondary-foreground: var(--secondary-foreground);
+	--color-muted: var(--muted);
+	--color-muted-foreground: var(--muted-foreground);
+	--color-accent: var(--accent);
+	--color-accent-foreground: var(--accent-foreground);
+	--color-destructive: var(--destructive);
+	--color-destructive-foreground: var(--destructive-foreground);
+	--color-border: var(--border);
+	--color-input: var(--input);
+	--color-ring: var(--ring);
+	--color-chart-1: var(--chart-1);
+	--color-chart-2: var(--chart-2);
+	--color-chart-3: var(--chart-3);
+	--color-chart-4: var(--chart-4);
+	--color-chart-5: var(--chart-5);
+	--radius-sm: calc(var(--radius) - 4px);
+	--radius-md: calc(var(--radius) - 2px);
+	--radius-lg: var(--radius);
+	--radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+	* {
+		@apply border-border outline-ring/50;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
+}

@@ -1,0 +1,3 @@
+.background-custom {
+	background-color: color-mix(in srgb, var(--background) 90%, var(--foreground) 10%);
+}

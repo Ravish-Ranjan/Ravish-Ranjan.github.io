@@ -1,80 +1,56 @@
 [
-    {
-        "info": "Notes",
-        "href": "https://notes-production-c0fa.up.railway.app",
-        "srcpath": "media/notes.png",
-        "desc": "an full-stack(MERN) notes web PWA app"
-    },
-    {
-        "info": "Melody",
-        "href": "https://github.com/Ravish-Ranjan/melody",
-        "srcpath": "media/melody.png",
-        "desc": "place to rate your favorite songs and see it climb leaderboard"
-    },
-    {
-        "info": "Qrcode maker",
-        "href": "https://ravish-ranjan.github.io/qrcode/",
-        "srcpath": "media/qrcode.png",
-        "desc": " a site to make and customize your qrcodes"
-    },
-    {
-        "info": "Barcode Generator",
-        "href": "https://ravish-ranjan.github.io/barcode/",
-        "srcpath": "media/barcode.png",
-        "desc": "website to generate barcode"
-    },
-    {
-        "info": "RChats",
-        "href": "https://rchats-production.up.railway.app",
-        "srcpath": "media/rchats.png",
-        "desc": "an full-stack(MERN) Realtime chat app"
-    },
-    {
-        "info": "Markdown Previewer",
-        "href": "https://ravish-ranjan.github.io/markdown-previewer/",
-        "srcpath": "media/mdpreview.png",
-        "desc": "website to preview your markdown"
-    },
-    {
-        "info": "Http-Codes",
-        "href": "https://ravish-ranjan.github.io/http-codes/",
-        "srcpath": "media/httpcodes.png",
-        "desc": "Ai generated image library of http status codes"
-    },
-    {
-        "info": "Quotes",
-        "href": "https://ravish-ranjan.github.io/quotes/",
-        "srcpath": "media/quotes.png",
-        "desc": "a website for quotes which you can share with others"
-    },
-    {
-        "info": "Fluke",
-        "href": "#work",
-        "srcpath": "media/fluke.png",
-        "desc": "a platform to watch and download movies and shows"
-    },
-    {
-        "info": "Music PLayer",
-        "href": "#work",
-        "srcpath": "media/song_player.png",
-        "desc": "a designer music player to listen music"
-    },
-    {
-        "info": "Otp Recivever",
-        "href": "#work",
-        "srcpath": "media/otp_enter.png",
-        "desc": ""
-    },
-    {
-        "info": "Control Panel",
-        "href": "#work",
-        "srcpath": "media/settings.png",
-        "desc": ""
-    },
-    {
-        "info": "Link Shortner",
-        "href": "#work",
-        "srcpath": "media/link.gif",
-        "desc": ""
-    }
+	{
+		"title": "Notes",
+		"link": "https://notes-production-c0fa.up.railway.app",
+		"image": "media/notes.png",
+		"description": "an full-stack(MERN) notes web PWA app"
+	},
+	{
+		"title": "Melody",
+		"link": "https://github.com/Ravish-Ranjan/melody",
+		"image": "media/melody.png",
+		"description": "place to rate your favorite songs and see it climb leaderboard"
+	},
+	{
+		"title": "Qrcode maker",
+		"link": "https://ravish-ranjan.github.io/qrcode/",
+		"image": "media/qrcode.png",
+		"description": " a site to make and customize your qrcodes"
+	},
+	{
+		"title": "Barcode Generator",
+		"link": "https://ravish-ranjan.github.io/barcode/",
+		"image": "media/barcode.png",
+		"description": "website to generate barcode"
+	},
+	{
+		"title": "RChats",
+		"link": "https://rchats-production.up.railway.app",
+		"image": "media/rchats.png",
+		"description": "an full-stack(MERN) Realtime chat app"
+	},
+	{
+		"title": "Markdown Previewer",
+		"link": "https://ravish-ranjan.github.io/markdown-previewer/",
+		"image": "media/markdown-previewer.png",
+		"description": "website to preview your markdown"
+	},
+	{
+		"title": "Http-Codes",
+		"link": "https://ravish-ranjan.github.io/http-codes/",
+		"image": "media/http-codes.png",
+		"description": "Ai generated image library of http status codes"
+	},
+	{
+		"title": "Quotes",
+		"link": "https://ravish-ranjan.github.io/quotes/",
+		"image": "media/quotes.png",
+		"description": "a website for quotes which you can share with others"
+	},
+	{
+		"title": "Fluke",
+		"link": "#work",
+		"image": "media/fluke.png",
+		"description": "a platform to watch and download movies and shows"
+	}
 ]
