@@ -4,13 +4,9 @@ import { H4 } from "./ui/Typography";
 
 function Nav() {
 	return (
-		<div className="w-full h-12 flex justify-end items-center px-4 gap-4">
-			<div className="mr-auto flex justify-center items-center h-full gap-2">
-				<img
-					src={logo}
-					alt="logo"
-					className="h-4/5 aspect-square"
-				/>
+		<div className="flex items-center justify-end w-full h-12 gap-4 px-4">
+			<div className="flex items-center justify-center h-full gap-2 mr-auto">
+				<img src={logo} alt="logo" className="h-4/5 aspect-square" />
 				<H4 className="oswald-font">Portfolio</H4>
 			</div>
 			<div className="flex gap-2 oswald-font text-sky-900 nav-links dark:text-sky-300">

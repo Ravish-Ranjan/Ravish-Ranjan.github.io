@@ -2,6 +2,7 @@ import projects from "@/assets/projects.json";
 import { H2, Muted, Small } from "./ui/Typography";
 import { Button } from "./ui/button";
 import { Dialog, DialogTrigger, DialogContent } from "./ui/dialog";
+import { DialogTitle } from "@radix-ui/react-dialog";
 
 interface ProjectProps {
 	title: string;
@@ -13,16 +14,16 @@ interface ProjectProps {
 function Project({ title, link, image, description }: ProjectProps) {
 	return (
 		<div
-			className="min-w-72 p-1 flex-1 h-32 flex outline-2 outline-gray-500 gap-2 rounded-lg hover:outline-sky-900 hover:outline-4 px-2 hover:dark:outline-sky-300 backdrop-blur-xs"
+			className="flex flex-1 h-32 gap-2 p-1 px-2 rounded-lg min-w-72 outline-2 outline-gray-500 hover:outline-sky-900 hover:outline-4 hover:dark:outline-sky-300 backdrop-blur-xs"
 			style={{ transition: ".25s ease-in-out" }}
 		>
 			<img
 				src={image}
 				alt={title}
-				className="h-full object-cover aspect-square bg-zinc-300 dark:bg-zinc-800 rounded"
+				className="object-cover h-full rounded aspect-square bg-zinc-300 dark:bg-zinc-800"
 			/>
-			<div className="w-full h-full flex flex-col justify-between gap-2">
-                <div></div>
+			<div className="flex flex-col justify-between w-full h-full gap-2">
+				<div></div>
 				<div>
 					<Small className="text-lg oswald-font">{title}</Small>
 					<Muted className="text-sm [&:not(:first-child)]:my-0  text-balance overflow-ellipsis line-clamp-2 oswald-font">
@@ -33,7 +34,7 @@ function Project({ title, link, image, description }: ProjectProps) {
 					<a href={link} target="_blank" className="cursor-pointer">
 						<Button
 							variant={"link"}
-							className="underline px-2 cursor-pointer"
+							className="px-2 underline cursor-pointer"
 						>
 							Visit
 						</Button>
@@ -41,24 +42,26 @@ function Project({ title, link, image, description }: ProjectProps) {
 					<Dialog>
 						<DialogTrigger asChild>
 							<Button
-								className="cursor-pointer outline-1 hover:outline-zinc-300 p-2 dark:outline-zinc-700"
+								className="p-2 cursor-pointer outline-1 hover:outline-zinc-300 dark:outline-zinc-700"
 								variant={"outline"}
 							>
 								Preview
 							</Button>
 						</DialogTrigger>
 						<DialogContent
-							className="w-4xl my-2 flex flex-col object-contain"
+							className="flex flex-col object-contain my-2 w-4xl"
 							style={{
 								aspectRatio: "4/3",
 								width: "98vw !important",
 							}}
 						>
-							<Small>{title}</Small>
+							<DialogTitle>
+								<Small>{title}</Small>
+							</DialogTitle>
 							<iframe
 								src={link}
 								title={title}
-								className="h-full w-full rounded bg-white"
+								className="w-full h-full bg-white rounded"
 							/>
 						</DialogContent>
 					</Dialog>
@@ -71,16 +74,16 @@ function Project({ title, link, image, description }: ProjectProps) {
 function Projects() {
 	return (
 		<div
-			className="w-full flex flex-col items-center p-4 gap-4"
+			className="flex flex-col items-center w-full gap-4 p-4"
 			id="projects"
 		>
-			<H2 className="oswald-font relative w-full text-center grid place-items-center font-normal">
-				<span className="text-3xl dark:bg-zinc-800 px-4 title-custom">
+			<H2 className="relative grid w-full font-normal text-center oswald-font place-items-center">
+				<span className="px-4 text-3xl dark:bg-zinc-800 title-custom">
 					Projects
 				</span>
-				<div className="w-full absolute h-1 bg-sky-900 -z-10 dark:bg-sky-300"></div>
+				<div className="absolute w-full h-1 bg-sky-900 -z-10 dark:bg-sky-300"></div>
 			</H2>
-			<div className="flex flex-wrap px-8 justify-between items-center gap-2">
+			<div className="flex flex-wrap items-center justify-between gap-2 px-8">
 				{projects.map((val, i) => (
 					<Project {...val} key={i} />
 				))}
