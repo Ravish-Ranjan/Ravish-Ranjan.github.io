@@ -24,7 +24,11 @@ function ModeToggle() {
 	};
 
 	return (
-		<Button onClick={handleChange} variant={"outline"} className="has-[\>svg\]:px-1 p-0 oswald-font">
+		<Button
+			onClick={handleChange}
+			variant={"outline"}
+			className="cursor-pointer"
+		>
 			{theme === "light" && <Sun />}
 			{theme === "dark" && <Moon />}
 			{theme === "system" && <Monitor />}
