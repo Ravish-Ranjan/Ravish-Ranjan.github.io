@@ -3,6 +3,7 @@ import Footer from "./components/footer";
 import Hero from "./components/hero";
 import Nav from "./components/nav";
 import Projects from "./components/projects";
+import Skills from "./components/skills";
 import { ShootingStars } from "./components/ui/shooting-start";
 import { StarsBackground } from "./components/ui/stars-background";
 
@@ -12,6 +13,7 @@ function App() {
 			<Nav />
 			<Hero />
 			<About />
+			<Skills/>
 			<Projects />
 			<Footer/>
 			<ShootingStars className="-z-10" />

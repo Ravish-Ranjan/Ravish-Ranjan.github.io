@@ -41,8 +41,8 @@ function About() {
 			id="about"
 		>
 			<Marq />
-			<div className="container flex items-center justify-center w-full h-full gap-2 p-4 background-custom-inverted hero">
-				<p className="w-full text-2xl font-light text-center md:w-3/5 text-balance oswald-font marq-para">
+			<div className="container flex items-center justify-center w-full h-full gap-4 p-4 background-custom-inverted hero">
+				<p className="w-full text-xl font-light text-center md:text-2xl md:w-3/5 text-balance oswald-font marq-para">
 					"A highly motivated computer science student with experience
 					in many programming languages and web development. Eager to
 					apply my skills and knowledge to contribute to the success

@@ -1,7 +1,7 @@
 import { Button } from "./button";
 import { useTheme } from "./theme-provider";
 import { Sun, Moon, Monitor } from "lucide-react";
-import { Small } from "./Typography";
+// import { Small } from "./Typography";
 
 function ModeToggle() {
 	const { theme, setTheme } = useTheme();
@@ -24,8 +24,7 @@ function ModeToggle() {
 	};
 
 	return (
-		<Button onClick={handleChange} variant={"ghost"} className="oswald-font">
-			<Small>{theme}</Small>
+		<Button onClick={handleChange} variant={"outline"} className="has-[\>svg\]:px-1 p-0 oswald-font outline-1 outline-red-500">
 			{theme === "light" && <Sun />}
 			{theme === "dark" && <Moon />}
 			{theme === "system" && <Monitor />}

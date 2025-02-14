@@ -4,13 +4,12 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* *,
+*,
 *::before,
 *::after {
-	padding: 0;
-	margin: 0;
 	box-sizing: border-box;
-} */
+	/* outline: 1px solid red; */
+}
 html,
 body {
 	width: 100%;
@@ -36,17 +35,17 @@ body {
 
 .hero {
 	display: flex;
-	flex-direction: row;
+	flex-direction: row-reverse;
 }
 
 @media screen and (max-width: 640px) {
 	.hero {
-		flex-direction: column-reverse;
+		flex-direction: column;
 	}
 }
 @media screen and (min-width: 641px) {
 	.hero {
-		flex-direction: row;
+		flex-direction: row-reverse;
 	}
 }
 
@@ -83,7 +82,7 @@ body {
 	line-height: 100%;
 }
 .lifted-bg {
-	box-shadow: 0.5rem 0.5rem rgb(43, 43, 43);
+	box-shadow: 0.5rem 0.5rem rgb(61, 61, 61);
 }
 .lifted {
 	position: relative;
@@ -91,7 +90,7 @@ body {
 .lifted:after {
 	content: "Hi, Ravish here";
 	display: block;
-	color: black;
+	color: hsl(0, 0%, 30%);
 	position: absolute;
 	left: -2.5px;
 	top: 2.5px;
@@ -99,7 +98,7 @@ body {
 }
 
 :root {
-	--background: hsl(0, 0%, 76%);
+	--background: hsl(0, 0%, 83%);
 	--foreground: hsl(240 10% 3.9%);
 	--card: hsl(0 0% 100%);
 	--card-foreground: hsl(240 10% 3.9%);

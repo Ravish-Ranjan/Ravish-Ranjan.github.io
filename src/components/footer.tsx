@@ -3,7 +3,7 @@ import { Lead, Muted } from "./ui/Typography";
 
 function Footer() {
 	return (
-		<div className="grid w-full grid-cols-1 gap-4 p-4 px-8 bg-zinc-900 md:grid-cols-2 sm:grid-cols-3 oswald-font min-h-60 ">
+		<div className="grid w-full grid-cols-1 gap-4 p-4 px-4 bg-zinc-300 dark:bg-zinc-900 md:grid-cols-2 sm:grid-cols-3 oswald-font min-h-60 ">
 			<div className="flex flex-col col-span-2 gap-2 p-2 md:col-span-1">
 				<Lead className="font-medium underline oswald-font underline-offset-6 text-zinc-900 dark:text-white">
 					From: Ravish Ranjan
@@ -17,7 +17,7 @@ function Footer() {
 				<Lead className="underline text-zinc-900 dark:text-white underline-offset-6">
 					Contact
 				</Lead>
-				<div className="space-y-4">
+				<div className="space-y-2 text-sm">
 					<a
 						href="mailto:ravishranjan2003@gmail.com"
 						className="flex items-center gap-2"

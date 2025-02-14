@@ -14,7 +14,7 @@ interface ProjectProps {
 function Project({ title, link, image, description }: ProjectProps) {
 	return (
 		<div
-			className="flex flex-1 h-32 gap-2 p-1 px-2 rounded-lg min-w-72 outline-2 outline-gray-500 hover:outline-sky-900 hover:outline-4 hover:dark:outline-sky-300 backdrop-blur-xs"
+			className="flex flex-1 h-32 gap-2 p-1 rounded-lg min-w-72 outline-2 outline-gray-500 hover:outline-sky-900 hover:outline-4 hover:dark:outline-sky-300 backdrop-blur-xs"
 			style={{ transition: ".25s ease-in-out" }}
 		>
 			<img
@@ -42,8 +42,8 @@ function Project({ title, link, image, description }: ProjectProps) {
 					<Dialog>
 						<DialogTrigger asChild>
 							<Button
-								className="p-2 cursor-pointer outline-1 hover:outline-zinc-300 dark:outline-zinc-700"
-								variant={"outline"}
+								className="p-1 underline cursor-pointer"
+								variant={"link"}
 							>
 								Preview
 							</Button>
@@ -74,7 +74,7 @@ function Project({ title, link, image, description }: ProjectProps) {
 function Projects() {
 	return (
 		<div
-			className="flex flex-col items-center w-full gap-4 p-4"
+			className="flex flex-col items-center w-full gap-4 p-2"
 			id="projects"
 		>
 			<H2 className="relative grid w-full font-normal text-center oswald-font place-items-center">
@@ -83,7 +83,7 @@ function Projects() {
 				</span>
 				<div className="absolute w-full h-1 bg-sky-900 -z-10 dark:bg-sky-300"></div>
 			</H2>
-			<div className="flex flex-wrap items-center justify-between gap-2 px-8">
+			<div className="flex flex-wrap items-center justify-between gap-2 px-4">
 				{projects.map((val, i) => (
 					<Project {...val} key={i} />
 				))}
