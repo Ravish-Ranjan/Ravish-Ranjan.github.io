@@ -1,5 +1,11 @@
 [
 	{
+		"title":"TraveGenie",
+		"link":"https://travelgenie-production.up.railway.app/",
+		"image":"/media/travelGenie.png",
+		"description":"an AI based travel itinerary generator"
+	},
+	{
 		"title": "Notes",
 		"link": "https://notes-production-c0fa.up.railway.app",
 		"image": "media/notes.png",
