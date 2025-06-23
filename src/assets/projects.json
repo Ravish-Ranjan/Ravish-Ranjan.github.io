@@ -1,5 +1,10 @@
 [
 	{
+		"title":"Dashboard",
+		"link":"https://ravish-ranjan.github.io/dashboard",
+		"image":"/media/dashboard.png",
+		"description":"a web app to be used as a smart display "
+	},{
 		"title":"TraveGenie",
 		"link":"https://travelgenie-production.up.railway.app/",
 		"image":"/media/travelGenie.png",
