@@ -1,5 +1,11 @@
 [
 	{
+		"title": "Resource MOnitor",
+		"link": "https://ravish-ranjan.github.io/apps/resource-monitor",
+		"image": "/media/resource-monitor.png",
+		"description": "a light-weight electron-app for your system resource monitoring"
+	},
+	{
 		"title": "Dashboard",
 		"link": "https://ravish-ranjan.github.io/dashboard",
 		"image": "/media/dashboard.png",
