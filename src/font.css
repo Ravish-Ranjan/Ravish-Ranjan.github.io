@@ -1,0 +1,45 @@
+@font-face {
+    font-family: oswald;
+    src: url("./assets//oswald.ttf");
+}
+
+.oswald{
+    font-family: oswald, sans-serif;
+    font-weight: 500;
+}
+.oswald-100{
+    font-family: oswald, sans-serif;
+    font-weight: 100;
+}
+.oswald-200{
+    font-family: oswald, sans-serif;
+    font-weight: 200;
+}
+.oswald-300{
+    font-family: oswald, sans-serif;
+    font-weight: 300;
+}
+.oswald-400{
+    font-family: oswald, sans-serif;
+    font-weight: 400;
+}
+.oswald-500{
+    font-family: oswald, sans-serif;
+    font-weight: 500;
+}
+.oswald-600{
+    font-family: oswald, sans-serif;
+    font-weight: 600;
+}
+.oswald-700{
+    font-family: oswald, sans-serif;
+    font-weight: 700;
+}
+.oswald-800{
+    font-family: oswald, sans-serif;
+    font-weight: 800;
+}
+.oswald-900{
+    font-family: oswald, sans-serif;
+    font-weight: 900;
+}

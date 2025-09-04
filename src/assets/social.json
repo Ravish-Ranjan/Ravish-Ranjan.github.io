@@ -1,0 +1,27 @@
+[
+	{
+		"platform": "github",
+		"href": "https://github.com/Ravish-Ranjan",
+		"label": "GitHub"
+	},
+	{
+		"platform": "linkedin",
+		"href": "https://www.linkedin.com/in/ravish-ranjan-1a0757238/",
+		"label": "LinkedIn"
+	},
+	{
+		"platform": "website",
+		"href": "https://ravish-ranjan.github.io",
+		"label": "Website"
+	},
+	{
+		"platform": "email",
+		"href": "mailto:ravishranjan2003@gmail.com",
+		"label": "Email"
+	},
+	{
+		"platform": "instagram",
+		"href": "https://www.instagram.com/_ravishranjan_/",
+        "label":"Instagram"
+	}
+]
