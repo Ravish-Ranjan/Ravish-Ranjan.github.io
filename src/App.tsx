@@ -17,18 +17,22 @@ import { ShootingStars } from "./components/ui/shooting-start";
 function App() {
 	return (
 		<SidebarProvider defaultOpen={false}>
-			<div className="w-full min-h-screen grid gap-y-4">
+			<div className="w-screen overflow-x-hidden min-h-screen grid gap-y-4">
 				<CustomSidebar />
 				{/* navbar */}
 				<Navbar />
 				{/* hero */}
 				<Hero />
 				{/* currently working on */}
-				<Current />
+				<Suspense fallback={<Loading />}>
+					<Current />
+				</Suspense>
 				{/* about */}
 				<About />
 				{/* skills */}
-				<Skills />
+				<Suspense fallback={<Loading />}>
+					<Skills />
+				</Suspense>
 				<Suspense fallback={<Loading />}>
 					{/* projects */}
 					<Projects />
@@ -37,8 +41,8 @@ function App() {
 				<Contact />
 				{/* footer */}
 				<Footer />
-				<StarsBackground className="-z-20 bg-zinc-200 dark:bg-zinc-900"/>
-				<ShootingStars className="-z-10"/>
+				<StarsBackground className="-z-20 bg-zinc-200 dark:bg-zinc-900 h-full" />
+				<ShootingStars className="-z-10 h-screen" />
 			</div>
 		</SidebarProvider>
 	);
