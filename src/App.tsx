@@ -1,18 +1,21 @@
 import { lazy, Suspense } from "react";
 
-import Loading from "./components/loading";
-import Navbar from "./components/navbar";
-import Hero from "./components/hero";
-import Current from "./components/current";
-import About from "./components/about";
-import Skills from "./components/skills";
-const Projects = lazy(() => import("./components/projects"));
-import Footer from "./components/footer";
-import Contact from "./components/contact";
-import CustomSidebar from "./components/CustomSidebar";
+import { ShootingStars } from "./components/ui/shooting-start";
 import { SidebarProvider } from "./components/ui/sidebar";
 import { StarsBackground } from "./components/ui/stars-background";
-import { ShootingStars } from "./components/ui/shooting-start";
+
+import Hero from "./components/hero";
+import About from "./components/about";
+import Footer from "./components/footer";
+import Navbar from "./components/navbar";
+import Loading from "./components/loading";
+import Contact from "./components/contact";
+import CustomSidebar from "./components/CustomSidebar";
+
+const Skills = lazy(() => import("./components/skills"));
+const Current = lazy(() => import("./components/current"));
+const Projects = lazy(() => import("./components/projects"));
+
 
 function App() {
 	return (
