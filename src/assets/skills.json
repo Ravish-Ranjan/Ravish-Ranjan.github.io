@@ -1,0 +1,78 @@
+[
+	{
+		"label": "Frontend",
+		"icon": "",
+		"colour": "blue",
+		"skills": [
+			"ReactJS",
+			"Tailwind CSS",
+			"Bootstarp CSS",
+			"SCSS",
+			"jQuery",
+			"JavaScript",
+			"TypeScript",
+			"HTML/CSS",
+			"Zustand",
+			"Vue.js"
+		]
+	},
+	{
+		"label": "UI-Libraries",
+		"icon": "",
+		"colour": "sky",
+		"skills": [
+			"Material UI",
+			"Shadcn UI",
+			"BlueprintJS UI",
+			"Aceternity UI"
+		]
+	},
+	{
+		"label": "Backend",
+		"icon": "",
+		"colour": "teal",
+		"skills": ["Node.js", "Express", "Python", "RESTful APIs", "Flask"]
+	},
+	{
+		"label": "Database",
+		"icon": "",
+		"colour": "emerald",
+		"skills": [
+			"MongoDB",
+			"PostgreSQL",
+			"MySQL",
+			"Mongoose",
+			"MongoDb Atlas"
+		]
+	},
+	{
+		"label": "Languages",
+		"icon": "",
+		"colour": "yellow",
+		"skills": [
+			"JavaScript",
+			"TypeScript",
+			"Python",
+			"Java",
+			"SQL",
+			"PHP",
+			"C",
+			"C++",
+			"Rust",
+			"R",
+			"HTML/CSS"
+		]
+	},
+	{
+		"label": "Others",
+		"icon": "",
+		"colour": "red",
+		"skills": ["Git", "Linux", "Postman"]
+	},
+	{
+		"label": "Tools",
+		"icon": "",
+		"colour": "violet",
+		"skills": ["VS Code", "GitHub Actions", "NPM"]
+	}
+]

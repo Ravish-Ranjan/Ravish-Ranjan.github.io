@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import Button from "./ui/button";
 import { H1, P } from "./ui/Typography";
-import illus from "@/assets/illus.svg";
+import illus from "@/assets/heroillus.svg";
 
 function Hero() {
 	return (
