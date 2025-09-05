@@ -4,7 +4,7 @@ import React, {
 	useState,
 	useEffect,
 	useRef,
-	RefObject,
+	type RefObject,
 	useCallback,
 } from "react";
 
