@@ -1,8 +1,7 @@
-import { Suspense, useState } from "react";
 import SepHeading from "./SepHeading";
 import allSkills from "@/assets/skills.json";
 import Button from "./ui/button";
-import Loading from "./loading";
+import { useState } from "react";
 
 type SkillCategory = {
 	label: string;
@@ -69,47 +68,46 @@ function Skills() {
 	const selectedTags = handleTagChange();
 
 	return (
-		<div id="skills" className=" flex flex-col justify-start items-center gap-4 min-h-66">
+		<div
+			id="skills"
+			className=" flex flex-col justify-start items-center gap-4 min-h-66"
+		>
 			<SepHeading>Skills</SepHeading>
-			<Suspense fallback={<Loading />}>
-				<div className="flex flex-wrap justify-center gap-2 max-w-4xl">
-					{tags.map((val) => {
-						return (
-							<Button
-								key={val}
-								variant={
-									selected == val ? "default" : "outline"
-								}
-								onClick={() => setSelected(val)}
-								className="cursor-pointer"
-							>
-								{val}
-							</Button>
-						);
-					})}
-				</div>
-				<div className="flex flex-wrap gap-2 justify-center oswald-400 max-w-4xl">
-					{selected === "All"
-						? SkillsList.flatMap((val,i) =>
-								val.skills.map((skl,j) => (
-									<SkillBubble
-										text={skl}
-										colour={val.colour}
-										key={`${i} ${j}`}
-									/>
-								))
-						  )
-						: selectedTags.skills.map((val) => {
-								return (
-									<SkillBubble
-										text={val}
-										colour={selectedTags.colour}
-										key={val}
-									/>
-								);
-						  })}
-				</div>
-			</Suspense>
+			<div className="flex flex-wrap justify-center gap-2 max-w-4xl">
+				{tags.map((val) => {
+					return (
+						<Button
+							key={val}
+							variant={selected == val ? "default" : "outline"}
+							onClick={() => setSelected(val)}
+							className="cursor-pointer"
+						>
+							{val}
+						</Button>
+					);
+				})}
+			</div>
+			<div className="flex flex-wrap gap-2 justify-center oswald-400 max-w-4xl">
+				{selected === "All"
+					? SkillsList.flatMap((val, i) =>
+							val.skills.map((skl, j) => (
+								<SkillBubble
+									text={skl}
+									colour={val.colour}
+									key={`${i} ${j}`}
+								/>
+							))
+					  )
+					: selectedTags.skills.map((val) => {
+							return (
+								<SkillBubble
+									text={val}
+									colour={selectedTags.colour}
+									key={val}
+								/>
+							);
+					  })}
+			</div>
 		</div>
 	);
 }
