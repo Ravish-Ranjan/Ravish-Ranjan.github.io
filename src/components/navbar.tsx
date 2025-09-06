@@ -4,7 +4,7 @@ import { SidebarTrigger } from "./ui/sidebar";
 
 function Navbar() {
 	return (
-		<div className="flex justify-end-safe p-2 bg-zinc-300 dark:bg-zinc-800 -mt-4">
+		<div className="flex justify-end-safe p-2 bg-zinc-300 dark:bg-zinc-800 md:-mt-4">
 			<SidebarTrigger
 				className="p-2 h-10 w-10 rounded-xl md:hidden mr-auto"
 				variant={"outline"}

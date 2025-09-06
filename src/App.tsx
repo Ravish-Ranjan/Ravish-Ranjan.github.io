@@ -1,5 +1,3 @@
-import { lazy, Suspense } from "react";
-
 import { ShootingStars } from "./components/ui/shooting-start";
 import { SidebarProvider } from "./components/ui/sidebar";
 import { StarsBackground } from "./components/ui/stars-background";
@@ -8,14 +6,12 @@ import Hero from "./components/hero";
 import About from "./components/about";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
-import Loading from "./components/loading";
 import Contact from "./components/contact";
 import CustomSidebar from "./components/CustomSidebar";
 
-const Skills = lazy(() => import("./components/skills"));
-const Current = lazy(() => import("./components/current"));
-const Projects = lazy(() => import("./components/projects"));
-
+import Skills from "./components/skills";
+import Current from "./components/current";
+import Projects from "./components/projects";
 
 function App() {
 	return (
@@ -27,19 +23,13 @@ function App() {
 				{/* hero */}
 				<Hero />
 				{/* currently working on */}
-				<Suspense fallback={<Loading />}>
-					<Current />
-				</Suspense>
+				<Current />
 				{/* about */}
 				<About />
 				{/* skills */}
-				<Suspense fallback={<Loading />}>
-					<Skills />
-				</Suspense>
-				<Suspense fallback={<Loading />}>
-					{/* projects */}
-					<Projects />
-				</Suspense>
+				<Skills />
+				{/* projects */}
+				<Projects />
 				{/* contact */}
 				<Contact />
 				{/* footer */}

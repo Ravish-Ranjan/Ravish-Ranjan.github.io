@@ -7,10 +7,12 @@ import {
 	SidebarMenu,
 	SidebarMenuButton,
 	SidebarMenuItem,
+	useSidebar,
 } from "./ui/sidebar";
 import { Large, Small } from "./ui/Typography";
 
 function CustomSidebar() {
+	const { setOpen } = useSidebar();
 	return (
 		<Sidebar>
 			<SidebarHeader className="grid place-items-center">
@@ -20,36 +22,56 @@ function CustomSidebar() {
 				<SidebarGroup>
 					<SidebarMenu>
 						<SidebarMenuItem>
-							<SidebarMenuButton asChild className="">
-								<Button variant={"link"} asChild>
+							<SidebarMenuButton asChild>
+								<Button
+									variant={"link"}
+									asChild
+									onClick={() => setOpen(false)}
+								>
 									<a href="#current">
 										<Small>Current Work</Small>
 									</a>
 								</Button>
 							</SidebarMenuButton>
 							<SidebarMenuButton asChild>
-								<Button variant={"link"} asChild>
+								<Button
+									variant={"link"}
+									asChild
+									onClick={() => setOpen(false)}
+								>
 									<a href="#about">
 										<Small>About Me</Small>
 									</a>
 								</Button>
 							</SidebarMenuButton>
 							<SidebarMenuButton asChild>
-								<Button variant={"link"} asChild>
+								<Button
+									variant={"link"}
+									asChild
+									onClick={() => setOpen(false)}
+								>
 									<a href="#skills">
 										<Small>Skills</Small>
 									</a>
 								</Button>
 							</SidebarMenuButton>
 							<SidebarMenuButton asChild>
-								<Button variant={"link"} asChild>
+								<Button
+									variant={"link"}
+									asChild
+									onClick={() => setOpen(false)}
+								>
 									<a href="#projects">
 										<Small>Projects</Small>
 									</a>
 								</Button>
 							</SidebarMenuButton>
 							<SidebarMenuButton asChild>
-								<Button variant={"link"} asChild>
+								<Button
+									variant={"link"}
+									asChild
+									onClick={() => setOpen(false)}
+								>
 									<a href="#contact">
 										<Small>Contact</Small>
 									</a>
