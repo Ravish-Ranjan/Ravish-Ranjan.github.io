@@ -2,73 +2,73 @@
 	{
 		"title": "Resource Monitor",
 		"link": "https://ravish-ranjan.github.io/resource-monitor",
-		"image": "/media/resource-monitor.png",
+		"image": "/media/resource-monitor.webp",
 		"description": "a light-weight electron-app for your system resource monitoring"
 	},
 	{
 		"title": "Dashboard",
 		"link": "https://ravish-ranjan.github.io/dashboard",
-		"image": "/media/dashboard.png",
+		"image": "/media/dashboard.webp",
 		"description": "a web app to be used as a smart display "
 	},
 	{
 		"title": "TraveGenie",
 		"link": "https://travelgenie-production.up.railway.app/",
-		"image": "/media/travelGenie.png",
+		"image": "/media/travelGenie.webp",
 		"description": "an AI based travel itinerary generator"
 	},
 	{
 		"title": "Notes",
 		"link": "https://notes-qgg5.onrender.com",
-		"image": "media/notes.png",
+		"image": "media/notes.webp",
 		"description": "an full-stack(MERN) notes web PWA app"
 	},
 	{
 		"title": "Melody",
 		"link": "https://github.com/Ravish-Ranjan/melody",
-		"image": "media/melody.png",
+		"image": "media/melody.webp",
 		"description": "place to rate your favorite songs and see it climb leaderboard"
 	},
 	{
 		"title": "Qrcode maker",
 		"link": "https://ravish-ranjan.github.io/qrcode/",
-		"image": "media/qrcode.png",
+		"image": "media/qrcode.webp",
 		"description": " a site to make and customize your qrcodes"
 	},
 	{
 		"title": "Barcode Generator",
 		"link": "https://ravish-ranjan.github.io/barcode/",
-		"image": "media/barcode.png",
+		"image": "media/barcode.webp",
 		"description": "website to generate barcode"
 	},
 	{
 		"title": "RChats",
 		"link": "https://rchats.onrender.com",
-		"image": "media/rchats.png",
+		"image": "media/rchats.webp",
 		"description": "an full-stack(MERN) Realtime chat app"
 	},
 	{
 		"title": "Markdown Previewer",
 		"link": "https://ravish-ranjan.github.io/markdown-previewer/",
-		"image": "media/markdown-previewer.png",
+		"image": "media/markdown-previewer.webp",
 		"description": "website to preview your markdown"
 	},
 	{
 		"title": "Http-Codes",
 		"link": "https://ravish-ranjan.github.io/http-codes/",
-		"image": "media/http-codes.png",
+		"image": "media/http-codes.webp",
 		"description": "Ai generated image library of http status codes"
 	},
 	{
 		"title": "Quotes",
 		"link": "https://ravish-ranjan.github.io/quotes/",
-		"image": "media/quotes.png",
+		"image": "media/quotes.webp",
 		"description": "a website for quotes which you can share with others"
 	},
 	{
 		"title": "Fluke",
 		"link": "#work",
-		"image": "media/fluke.png",
+		"image": "media/fluke.webp",
 		"description": "a platform to watch and download movies and shows"
 	}
 ]

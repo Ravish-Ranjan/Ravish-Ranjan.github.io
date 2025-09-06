@@ -52,7 +52,7 @@ function About() {
 			<Marq />
 			<div className="w-11/12 mx-4 md:mx-0 flex-col md:flex-row flex justify-center items-center gap-2 bg-zinc-300 dark:bg-zinc-800 p-4 rounded-2xl shadow-2xl">
 				<img
-					src="media/prof.jpg"
+					src="media/prof.webp"
 					className="w-3/4 sm:w-1/2 md:w-1/4 img-back shadow-[8px_8px_0px] rounded-2xl shadow-zinc-500 dark:shadow-zinc-700"
 					alt="profile picture"
 				/>
