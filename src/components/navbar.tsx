@@ -6,9 +6,10 @@ function Navbar() {
 	return (
 		<div className="flex justify-end-safe p-2 bg-zinc-300 dark:bg-zinc-800 md:-mt-4">
 			<SidebarTrigger
-				className="p-2 h-10 w-10 rounded-xl md:hidden mr-auto"
+				className="p-2 h-10 w-10 rounded-xl md:hidden mr-2"
 				variant={"outline"}
 			/>
+			<img src="./logo.webp" alt="Logo" className="mr-auto h-10 drop-shadow-[0px_0px_3px] drop-shadow-zinc-600 dark:drop-shadow-zinc-300" />
 			<div className="hidden gap-1 md:flex group oswald ">
 				<Button variant={"link"} asChild>
 					<a href="#current" className="peer text-teal-800 dark:text-teal-300">Current Work</a>
