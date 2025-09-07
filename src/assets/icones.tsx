@@ -459,7 +459,6 @@ export function Link(props: SVGProps<SVGSVGElement>) {
 			viewBox="0 0 24 24"
 			{...props}
 		>
-			{/* Icon from Lucide by Lucide Contributors - https://github.com/lucide-icons/lucide/blob/main/LICENSE */}
 			<g
 				fill="none"
 				stroke="currentColor"

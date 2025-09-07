@@ -13,7 +13,7 @@
 	},
 	{
 		"title": "TraveGenie",
-		"link": "https://travelgenie-production.up.railway.app/",
+		"link": "https://travelgenie-q8d3-9v1knyd0o-ravish-ranjans-projects.vercel.app",
 		"image": "/media/travelGenie.webp",
 		"description": "an AI based travel itinerary generator"
 	},
@@ -67,7 +67,7 @@
 	},
 	{
 		"title": "Fluke",
-		"link": "#work",
+		"link": "https://github.com/Ravish-Ranjan/fluke",
 		"image": "media/fluke.webp",
 		"description": "a platform to watch and download movies and shows"
 	}
