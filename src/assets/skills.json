@@ -13,7 +13,8 @@
 			"TypeScript",
 			"HTML/CSS",
 			"Zustand",
-			"Vue.js"
+			"Vue.js",
+			"ReactNative"
 		]
 	},
 	{
@@ -31,7 +32,7 @@
 		"label": "Backend",
 		"icon": "",
 		"colour": "teal",
-		"skills": ["Node.js", "Express", "Python", "RESTful APIs", "Flask"]
+		"skills": ["Node.js", "Express", "Python", "RESTful APIs", "Flask","NextJS","Socket.io"]
 	},
 	{
 		"label": "Database",
@@ -60,19 +61,21 @@
 			"C++",
 			"Rust",
 			"R",
-			"HTML/CSS"
+			"HTML",
+			"CSS",
+			"SQL"
 		]
 	},
 	{
 		"label": "Others",
 		"icon": "",
 		"colour": "red",
-		"skills": ["Git", "Linux", "Postman"]
+		"skills": ["Git", "Linux", "Postman", "electron", "expo","JWT","Pandas","Numpy","ScikitLearn"]
 	},
 	{
 		"label": "Tools",
 		"icon": "",
 		"colour": "violet",
-		"skills": ["VS Code", "GitHub Actions", "NPM"]
+		"skills": ["VS Code", "GitHub Actions", "NPM","Bash Script", "pnpm"]
 	}
 ]
