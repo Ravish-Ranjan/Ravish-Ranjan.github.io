@@ -22,7 +22,7 @@ type Project = {
 	estimatedCompletion?: string;
 };
 
-const getStatusColor = (status: string) => {
+const getStatusColor = (status: Project["status"]) => {
 	switch (status) {
 		case "In Progress":
 			return "bg-cyan-700 dark:bg-cyan-400 text-primary-foreground";
@@ -41,7 +41,7 @@ function CurProj({ project }: { project: Project }) {
 	return (
 		<Card
 			key={project.id}
-			className="group hover:shadow-lg transition-all duration-300 border-border hover:border-primary/50 oswald"
+			className="group hover:shadow-lg transition-all duration-300 border-border hover:border-primary/50 oswald max-w-md"
 		>
 			<CardHeader className="space-y-3">
 				<div className="flex items-center justify-between">
@@ -52,7 +52,7 @@ function CurProj({ project }: { project: Project }) {
 						{project.status}
 					</Badge>
 				</div>
-				<CardDescription className="text-sm text-muted-foreground leading-relaxed">
+				<CardDescription className="text-sm text-muted-foreground leading-relaxed max-h-22 line-clamp-3">
 					{project.description}
 				</CardDescription>
 			</CardHeader>
@@ -98,7 +98,7 @@ function CurProj({ project }: { project: Project }) {
 						<Calendar className="w-4 h-4" />
 						<span>
 							Started:{" "}
-							{new Date(project.startDate).toLocaleDateString()}
+							{new Date(project.startDate).toDateString()}
 						</span>
 					</div>
 					{project.estimatedCompletion && (
@@ -108,7 +108,7 @@ function CurProj({ project }: { project: Project }) {
 								Est. completion:{" "}
 								{new Date(
 									project.estimatedCompletion
-								).toLocaleDateString()}
+								).toDateString()}
 							</span>
 						</div>
 					)}
