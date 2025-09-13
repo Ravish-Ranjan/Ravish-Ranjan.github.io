@@ -5,7 +5,6 @@ import { useState } from "react";
 
 type SkillCategory = {
 	label: string;
-	icon: string;
 	colour: string;
 	skills: string[];
 };
@@ -59,10 +58,9 @@ function Skills() {
 					label: "",
 					colour: "",
 					skills: [],
-					icon: "",
 				}
 			);
-		return { label: "", colour: "", skills: [], icon: "" };
+		return { label: "", colour: "", skills: [] };
 	};
 
 	const selectedTags = handleTagChange();
@@ -70,7 +68,7 @@ function Skills() {
 	return (
 		<div
 			id="skills"
-			className=" flex flex-col justify-start items-center gap-4 min-h-66"
+			className=" flex flex-col justify-start items-center gap-8 min-h-66"
 		>
 			<SepHeading>Skills</SepHeading>
 			<div className="flex flex-wrap justify-center gap-2 max-w-4xl">

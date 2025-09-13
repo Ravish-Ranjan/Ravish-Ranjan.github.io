@@ -20,7 +20,8 @@
 		"dev": "vite",
 		"build": "tsc -b && vite build",
 		"lint": "eslint .",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"deploy":"git checkout develop && npm run build && git add . && git commit -m \"building for deployment\" && git checkout release && powershell -Command \"Move-Item -Path ./dist/* -Destination ./ -Force\" && git add . && git commit -m \"deployment\" && git push origin release && git checkout develop"
 	},
 	"dependencies": {
 		"@radix-ui/react-dialog": "^1.1.15",
@@ -47,6 +48,7 @@
 		"eslint-plugin-react-hooks": "^5.2.0",
 		"eslint-plugin-react-refresh": "^0.4.20",
 		"globals": "^16.3.0",
+		"shx": "^0.4.0",
 		"tailwindcss": "^4.1.12",
 		"tw-animate-css": "^1.3.8",
 		"typescript": "~5.8.3",

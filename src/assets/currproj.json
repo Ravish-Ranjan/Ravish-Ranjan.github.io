@@ -1,19 +1,30 @@
 [
 	{
 		"id": "1",
-		"title": "AI-Powered Task Manager",
-		"description": "Building an intelligent task management app that uses machine learning to prioritize tasks and predict completion times based on user behavior patterns.",
-		"status": "Testing",
+		"title": "LogiSick",
+		"description": "LogiSick is a web-based inventory and logistics management platform designed to streamline supply chain operations. It enables businesses to efficiently track & manage warehouse inventories, process orders, and monitor deliveries in real time. The system provides an intuitive dashboard, smart notifications for low stock, and detailed reporting to improve decision-making and reduce operational delays. By integrating inventory control with logistics workflows, LogiSick ensures higher accuracy, cost efficiency, and smoother end-to-end management.",
+		"status": "In Progress",
 		"technologies": [
-			"Next.js",
-			"TypeScript",
-			"OpenAI API",
-			"Supabase",
-			"Tailwind CSS"
+			"NodeJS",
+			"Typescript",
+			"ReactJS",
+			"TailwindCSS",
+			"ShadcnUI",
+			"Google Authentication",
+			"MongoDB",
+			"Mongoose ODM",
+			"MongoDB Atlas ",
+			"ElectronJS",
+			"JWT Authentication",
+			"ExpressJS",
+			"BcryptJS",
+			"Zustand ",
+			"ESLint",
+			"RadixUI"
 		],
-		"progress": 10,
-		"githubUrl": "https://github.com/username/ai-task-manager",
-		"startDate": "2024-01-15",
-		"estimatedCompletion": "2024-03-01"
+		"progress": 33,
+		"githubUrl": "https://github.com/GaurangTyagi123/logisick",
+		"startDate": "2025-08-15",
+		"estimatedCompletion": "2025-11-15"
 	}
 ]
