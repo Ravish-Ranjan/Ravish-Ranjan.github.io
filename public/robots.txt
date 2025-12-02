@@ -3,4 +3,4 @@ Disallow:
 
 User-agent: *
 Disallow: /
-Sitemap: https://ravish-ranjan.github.io/sitemap.xml
+Sitemap: https://ravishdev.org/sitemap.xml

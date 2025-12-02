@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ravish-ranjan.github.io/</loc>
+    <loc>https://ravishdev.org/</loc>
     <lastmod>2025-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://rchats.onrender.com</loc>
+    <loc>https://rchats.ravishdev.org</loc>
     <lastmod>2025-08-2</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
@@ -19,13 +19,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ravish-ranjan.github.io/resource-monitor</loc>
+    <loc>https://resource-monitor.ravishdev.org/</loc>
     <lastmod>2025-08-14</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ravish-ranjan.github.io/dashboard</loc>
+    <loc>https://ravishdev.org/dashboard</loc>
     <lastmod>2025-06-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
@@ -49,31 +49,31 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ravish-ranjan.github.io/qrcode</loc>
+    <loc>https://ravishdev.org/qrcode</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ravish-ranjan.github.io/barcode</loc>
+    <loc>https://ravishdev.org/barcode</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ravish-ranjan.github.io/markdown-previewer</loc>
+    <loc>https://ravishdev.org/markdown-previewer</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ravish-ranjan.github.io/http-codes</loc>
+    <loc>https://ravishdev.org/http-codes</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ravish-ranjan.github.io/quotes</loc>
+    <loc>https://ravishdev.org/quotes</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
