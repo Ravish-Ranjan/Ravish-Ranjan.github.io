@@ -96,12 +96,12 @@ function Skills() {
 								/>
 							))
 					  )
-					: selectedTags.skills.map((val) => {
+					: selectedTags.skills.map((val,i) => {
 							return (
 								<SkillBubble
 									text={val}
 									colour={selectedTags.colour}
-									key={val}
+									key={`${i} ${val}`}
 								/>
 							);
 					  })}

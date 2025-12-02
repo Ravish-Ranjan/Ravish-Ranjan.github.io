@@ -11,7 +11,7 @@
 	},
 	{
 		"platform": "website",
-		"href": "https://ravish-ranjan.github.io",
+		"href": "https://www.ravishdev.org",
 		"label": "Website"
 	},
 	{
@@ -22,6 +22,11 @@
 	{
 		"platform": "instagram",
 		"href": "https://www.instagram.com/_ravishranjan_/",
-        "label":"Instagram"
+		"label": "Instagram"
+	},
+	{
+		"platform": "codepen",
+		"href": "https://codepen.io/_ravishranjan_",
+		"label": "CodePen"
 	}
 ]

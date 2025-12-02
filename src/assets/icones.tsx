@@ -579,3 +579,26 @@ export function MapPin(props: SVGProps<SVGSVGElement>) {
 		</svg>
 	);
 }
+
+export function Codepen(props: SVGProps<SVGSVGElement>) {
+	return (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="1em"
+			height="1em"
+			viewBox="0 0 24 24"
+			{...props}
+		>
+			<g
+				fill="none"
+				stroke="currentColor"
+				strokeLinecap="round"
+				strokeLinejoin="round"
+				strokeWidth="1.5"
+			>
+				<path d="M21 9v6M3 15V9m9 12v-6m0-12v6m0 6L3 9l9-6l9 6z" />
+				<path d="m12 21l-9-6l9-6l9 6z" />
+			</g>
+		</svg>
+	);
+}

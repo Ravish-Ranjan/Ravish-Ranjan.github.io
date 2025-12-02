@@ -5,6 +5,7 @@ import {
 	Globe,
 	Link,
 	Instagram,
+	Codepen,
 } from "@/assets/icones";
 import defaultLinks from "@/assets/social.json";
 import { H2, Muted } from "./ui/Typography";
@@ -18,6 +19,7 @@ export type SocialLink = {
 		| "email"
 		| "website"
 		| "instagram"
+		| "codepen"
 		| string;
 	label?: string;
 };
@@ -117,6 +119,8 @@ function SocialIcon({
 	if (p === "email") return <Mail className={className} aria-hidden="true" />;
 	if (p === "instagram")
 		return <Instagram className={className} aria-hidden="true" />;
+	if (p === "codepen")
+		return <Codepen className={className} aria-hidden="true" />;
 	if (p === "website")
 		return <Globe className={className} aria-hidden="true" />;
 	return <Link className={className} aria-hidden="true" />;
