@@ -47,6 +47,7 @@ function Hero() {
 					<Button
 						variant={"outline"}
 						onClick={() => handleScrollTo("contact")}
+						className="cursor-pointer"
 					>
 						Hire Me
 					</Button>
@@ -54,6 +55,7 @@ function Hero() {
 					<Button
 						variant={"outline"}
 						onClick={() => handleScrollTo("projects")}
+						className="cursor-pointer"
 					>
 						Projects
 					</Button>

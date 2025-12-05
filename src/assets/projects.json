@@ -24,6 +24,12 @@
 		"description": "a light-weight electron-app for your system resource monitoring"
 	},
 	{
+		"title": "Chiptune",
+		"link": "https://github.com/Ravish-Ranjan/chiptune",
+		"image": "/media/chiptune.webp",
+		"description": "A real-time software-based audio synthesis engine written in C++."
+	},
+	{
 		"title": "Dashboard",
 		"link": "https://ravishdev.org/dashboard",
 		"image": "/media/dashboard.webp",

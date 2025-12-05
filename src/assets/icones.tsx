@@ -602,3 +602,43 @@ export function Codepen(props: SVGProps<SVGSVGElement>) {
 		</svg>
 	);
 }
+
+export function GoUp(props: SVGProps<SVGSVGElement>) {
+	return (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="1em"
+			height="1em"
+			viewBox="0 0 24 24"
+			{...props}
+		>
+			<g
+				fill="none"
+				stroke="currentColor"
+				strokeDasharray="10"
+				strokeDashoffset="10"
+				strokeLinecap="round"
+				strokeLinejoin="round"
+				strokeWidth="2"
+			>
+				<path d="M12 12l-5 5M12 12l5 5">
+					<animate
+						fill="freeze"
+						attributeName="stroke-dashoffset"
+						dur="0.3s"
+						values="10;0"
+					/>
+				</path>
+				<path d="M12 6l-5 5M12 6l5 5">
+					<animate
+						fill="freeze"
+						attributeName="stroke-dashoffset"
+						begin="0.3s"
+						dur="0.3s"
+						values="10;0"
+					/>
+				</path>
+			</g>
+		</svg>
+	);
+}
