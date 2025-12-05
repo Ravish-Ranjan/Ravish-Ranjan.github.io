@@ -1,15 +1,26 @@
 import clsx from "clsx";
-import Button from "./ui/button";
-import { H1, P } from "./ui/Typography";
+import Button from "@/components/ui/button";
+import { H1, P } from "@/components/ui/Typography";
 import illus from "@/assets/heroillus.svg";
 
 function Hero() {
+	const handleScrollTo = (id: string) => {
+		const element = document.getElementById(id);
+		if (element) {
+			element.scrollIntoView({ behavior: "smooth" });
+		}
+	};
+
 	return (
 		<div
 			style={{ minHeight: "80vh" }}
 			className="p-8 flex flex-col justify-evenly items-center md:flex-row-reverse w-7/8 mx-auto gap-4 -mt-4"
 		>
-			<img src={illus} alt="image" className="w-full md:w-5/12 drop-shadow-2xl" />
+			<img
+				src={illus}
+				alt="image"
+				className="w-full md:w-5/12 drop-shadow-2xl"
+			/>
 			<div className="w-full md:w-7/12 h-auto grid">
 				<H1
 					className={clsx(
@@ -33,12 +44,18 @@ function Hero() {
 					user interfaces.
 				</P>
 				<div className="gap-2 flex mt-4 justify-center md:justify-start">
-					<Button variant={"outline"} asChild>
-						<a href="#contact">Hire Me</a>
+					<Button
+						variant={"outline"}
+						onClick={() => handleScrollTo("contact")}
+					>
+						Hire Me
 					</Button>
-					<Button variant={"outline"}>Download CV</Button>
-					<Button variant={"outline"} asChild>
-						<a href="#projects">Projects</a>
+					{/* <Button variant={"outline"}>Download CV</Button> */}
+					<Button
+						variant={"outline"}
+						onClick={() => handleScrollTo("projects")}
+					>
+						Projects
 					</Button>
 				</div>
 			</div>

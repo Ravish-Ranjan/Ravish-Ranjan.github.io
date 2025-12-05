@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import useModeStore from "@/store/useModeStore";
-import Button from "./ui/button";
+import Button from "@/components/ui/button";
 import { Sun, Moon, System } from "@/assets/icones";
 
 interface ThemeToggleProps {

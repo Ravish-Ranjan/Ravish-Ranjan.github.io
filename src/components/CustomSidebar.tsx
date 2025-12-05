@@ -1,4 +1,3 @@
-import Button from "./ui/button";
 import {
 	Sidebar,
 	SidebarContent,
@@ -7,12 +6,19 @@ import {
 	SidebarMenu,
 	SidebarMenuButton,
 	SidebarMenuItem,
-	useSidebar,
-} from "./ui/sidebar";
-import { Large, Small } from "./ui/Typography";
+} from "@/components/ui/sidebar";
+import { Large, Small } from "@/components/ui/Typography";
+import { useNavigate } from "react-router-dom";
 
 function CustomSidebar() {
-	const { setOpen } = useSidebar();
+	const navigate = useNavigate();
+	const handleScrollTo = (id: string) => {
+		const element = document.getElementById(id);
+		if (element) {
+			element.scrollIntoView({ behavior: "smooth" });
+		}
+	};
+
 	return (
 		<Sidebar>
 			<SidebarHeader className="grid place-items-center">
@@ -21,61 +27,36 @@ function CustomSidebar() {
 			<SidebarContent>
 				<SidebarGroup>
 					<SidebarMenu>
-						<SidebarMenuItem>
-							<SidebarMenuButton asChild>
-								<Button
-									variant={"link"}
-									asChild
-									onClick={() => setOpen(false)}
-								>
-									<a href="#current">
-										<Small>Current Work</Small>
-									</a>
-								</Button>
+						<SidebarMenuItem className="grid place-items-center">
+							<SidebarMenuButton
+								onClick={() => handleScrollTo("current")}
+							>
+								<Small>Current Work</Small>
 							</SidebarMenuButton>
-							<SidebarMenuButton asChild>
-								<Button
-									variant={"link"}
-									asChild
-									onClick={() => setOpen(false)}
-								>
-									<a href="#about">
-										<Small>About Me</Small>
-									</a>
-								</Button>
+							<SidebarMenuButton
+								onClick={() => handleScrollTo("about")}
+							>
+								<Small>About Me</Small>
 							</SidebarMenuButton>
-							<SidebarMenuButton asChild>
-								<Button
-									variant={"link"}
-									asChild
-									onClick={() => setOpen(false)}
-								>
-									<a href="#skills">
-										<Small>Skills</Small>
-									</a>
-								</Button>
+							<SidebarMenuButton
+								onClick={() => handleScrollTo("skills")}
+							>
+								<Small>Skills</Small>
 							</SidebarMenuButton>
-							<SidebarMenuButton asChild>
-								<Button
-									variant={"link"}
-									asChild
-									onClick={() => setOpen(false)}
-								>
-									<a href="#projects">
-										<Small>Projects</Small>
-									</a>
-								</Button>
+							<SidebarMenuButton
+								onClick={() => handleScrollTo("projects")}
+							>
+								<Small>Projects</Small>
 							</SidebarMenuButton>
-							<SidebarMenuButton asChild>
-								<Button
-									variant={"link"}
-									asChild
-									onClick={() => setOpen(false)}
-								>
-									<a href="#contact">
-										<Small>Contact</Small>
-									</a>
-								</Button>
+							<SidebarMenuButton
+								onClick={() => navigate("/allprojects")}
+							>
+								<Small>All Projects</Small>
+							</SidebarMenuButton>
+							<SidebarMenuButton
+								onClick={() => handleScrollTo("contact")}
+							>
+								<Small>Contact</Small>
 							</SidebarMenuButton>
 						</SidebarMenuItem>
 					</SidebarMenu>

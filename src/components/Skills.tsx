@@ -1,6 +1,6 @@
-import SepHeading from "./SepHeading";
+import SepHeading from "@/components/SeprateHeading";
 import allSkills from "@/assets/skills.json";
-import Button from "./ui/button";
+import Button from "@/components/ui/button";
 import { useState } from "react";
 
 type SkillCategory = {
@@ -96,7 +96,7 @@ function Skills() {
 								/>
 							))
 					  )
-					: selectedTags.skills.map((val,i) => {
+					: selectedTags.skills.map((val, i) => {
 							return (
 								<SkillBubble
 									text={val}

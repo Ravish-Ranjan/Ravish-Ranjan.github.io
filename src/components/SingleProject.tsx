@@ -1,6 +1,6 @@
 import { Link } from "@/assets/icones";
-import Button from "./ui/button";
-import { Muted, Small } from "./ui/Typography";
+import Button from "@/components/ui/button";
+import { Muted, Small } from "@/components/ui/Typography";
 
 interface ProjectProps {
 	project: {
@@ -20,7 +20,7 @@ function SinProject({ project }: ProjectProps) {
 				src={project.image}
 				alt={project.title}
 				style={{ aspectRatio: "16/9" }}
-				className="h-1/2 w-full object-fill rounded-lg img-back bg-zinc-300 dark:bg-zinc-800"
+				className="h-1/2 w-full object-fill rounded-lg img-back bg-zinc-200 dark:bg-zinc-800"
 			/>
 			<div className="flex flex-col justify-between h-1/2 w-full p-2">
 				<div className="grid place-items-center ">

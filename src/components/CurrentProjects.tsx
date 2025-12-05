@@ -1,13 +1,13 @@
 import { Calendar, Clock, GitHub, Link } from "@/assets/icones";
-import Button from "./ui/button";
+import Button from "@/components/ui/button";
 import {
 	Card,
 	CardContent,
 	CardDescription,
 	CardHeader,
 	CardTitle,
-} from "./ui/card";
-import Badge from "./ui/badge";
+} from "@/components/ui/card";
+import Badge from "@/components/ui/badge";
 
 type Project = {
 	id: string;
@@ -68,7 +68,7 @@ function CurProj({ project }: { project: Project }) {
 					</div>
 					<div className="w-full bg-zinc-400 dark:bg-zinc-600 rounded-full h-2">
 						<div
-							className="bg-zinc-800 dark:bg-zinc-300 h-2 rounded-full transition-all duration-500"
+							className="bg-zinc-800 dark:bg-zinc-200 h-2 rounded-full transition-all duration-500"
 							style={{ width: `${project.progress}%` }}
 						/>
 					</div>
