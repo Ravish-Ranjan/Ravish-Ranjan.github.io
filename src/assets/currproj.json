@@ -1,30 +1,19 @@
 [
 	{
 		"id": "1",
-		"title": "LogiSick",
-		"description": "LogiSick is a web-based inventory and logistics management platform designed to streamline supply chain operations. It enables businesses to efficiently track & manage warehouse inventories, process orders, and monitor deliveries in real time. The system provides an intuitive dashboard, smart notifications for low stock, and detailed reporting to improve decision-making and reduce operational delays. By integrating inventory control with logistics workflows, LogiSick ensures higher accuracy, cost efficiency, and smoother end-to-end management.",
-		"status": "Done",
+		"title": "Web Stat",
+		"description": "A real-time dashboard for tracking the availability and performance of multiple websites. Monitor uptime status, response times, and historical reliability with automatic checks every 5 minutes. Features persistent storage, visual status history, and instant manual checks for all your critical web properties.",
+		"status": "Planning",
 		"technologies": [
-			"NodeJS",
-			"Typescript",
 			"ReactJS",
+			"Typescript",
 			"TailwindCSS",
 			"ShadcnUI",
-			"Google Authentication",
-			"MongoDB",
-			"Mongoose ODM",
-			"MongoDB Atlas ",
-			"ElectronJS",
-			"JWT Authentication",
-			"ExpressJS",
-			"BcryptJS",
-			"Zustand ",
-			"ESLint",
-			"RadixUI"
+			"ESLint"
 		],
-		"progress": 100,
-		"githubUrl": "https://github.com/GaurangTyagi123/logisick",
-		"startDate": "2025-08-15",
-		"estimatedCompletion": "2025-11-15"
+		"progress": 5,
+		"githubUrl": "https://github.com/Ravish-Ranjan/web-stat",
+		"startDate": "2025-12-01",
+		"estimatedCompletion": "2026-01-15"
 	}
 ]

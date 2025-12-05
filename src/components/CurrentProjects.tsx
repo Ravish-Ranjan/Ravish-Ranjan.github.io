@@ -27,7 +27,7 @@ const getStatusColor = (status: Project["status"]) => {
 		case "In Progress":
 			return "bg-cyan-700 dark:bg-cyan-400 text-primary-foreground";
 		case "Planning":
-			return "bg-violet-400 dark:bg-violet-600 text-muted-foreground";
+			return "bg-violet-400 dark:bg-violet-600 text-secondary-foreground";
 		case "Testing":
 			return "bg-purple-300 dark:bg-purple-700 text-accent-foreground";
 		case "Launching Soon":
