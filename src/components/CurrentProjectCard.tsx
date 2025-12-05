@@ -1,5 +1,5 @@
-import CurProj from "./CurProj";
-import SepHeading from "./SepHeading";
+import CurProj from "@/components/CurrentProjects";
+import SepHeading from "@/components/SeprateHeading";
 import curProjects from "@/assets/currproj.json";
 
 type Project = {

@@ -1,6 +1,6 @@
 import { P, Small } from "@/components/ui/Typography";
 import clsx from "clsx";
-import SepHeading from "./SepHeading";
+import SepHeading from "@/components/SeprateHeading";
 
 const skills = [
 	"ReactJS",
@@ -32,7 +32,7 @@ function Marq({ rev = false }: { rev?: boolean }) {
 			{skls.map((val, i) => (
 				<Small
 					key={i}
-					className="text-md oswald-400 py-1 px-2 rounded bg-zinc-300 dark:bg-zinc-900 "
+					className="text-md oswald-400 py-1 px-2 rounded bg-zinc-200 dark:bg-zinc-900 "
 				>
 					{val}
 				</Small>
@@ -50,7 +50,7 @@ function About() {
 		>
 			<SepHeading>About Me</SepHeading>
 			<Marq />
-			<div className="w-11/12 mx-4 md:mx-0 flex-col md:flex-row flex justify-center items-center gap-2 bg-zinc-300 dark:bg-zinc-800 p-4 rounded-2xl shadow-2xl">
+			<div className="w-11/12 mx-4 md:mx-0 flex-col md:flex-row flex justify-center items-center gap-2 bg-zinc-200 dark:bg-zinc-800 p-4 rounded-2xl shadow-2xl">
 				<img
 					src="media/prof.webp"
 					className="w-3/4 sm:w-1/2 md:w-1/4 img-back shadow-[8px_8px_0px] rounded-2xl shadow-zinc-500 dark:shadow-zinc-700"

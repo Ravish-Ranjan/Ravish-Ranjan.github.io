@@ -1,4 +1,4 @@
-import { H2 } from "./ui/Typography";
+import { H2 } from "@/components/ui/Typography";
 
 function SepHeading({ children }: { children: string }) {
 	return (

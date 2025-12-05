@@ -1,13 +1,13 @@
 import { GitHub, LinkedIn, Mail } from "@/assets/icones";
-import SepHeading from "./SepHeading";
+import SepHeading from "@/components/SeprateHeading";
 import {
 	Card,
 	CardContent,
 	CardDescription,
 	CardHeader,
 	CardTitle,
-} from "./ui/card";
-import Button from "./ui/button";
+} from "@/components/ui/card";
+import Button from "@/components/ui/button";
 
 function Contact() {
 	return (
@@ -15,6 +15,7 @@ function Contact() {
 			<SepHeading>Contact</SepHeading>
 			<section className="py-4">
 				<div className="container mx-auto px-4">
+					{/* heading */}
 					<div className="text-center mb-6 oswald">
 						<h2 className="text-3xl font-bold mb-4 text-balance">
 							Get In Touch
@@ -26,10 +27,11 @@ function Contact() {
 						</p>
 					</div>
 
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+					<div className="grid gap-8 mx-auto">
 						{/* Contact Information */}
-						<div className="space-y-6 ">
-							<Card className="oswald">
+						<div className="space-y-6 grid gap-2 grid-cols-1 md:grid-cols-2">
+							{/* contact info */}
+							<Card className="oswald col-span-1 h-full">
 								<CardHeader>
 									<CardTitle className="flex items-center gap-2">
 										<Mail className="h-5 w-5" />
@@ -47,9 +49,8 @@ function Contact() {
 									</div>
 								</CardContent>
 							</Card>
-
 							{/* Social Links */}
-							<Card className="oswald">
+							<Card className="oswald col-span-1 h-full">
 								<CardHeader>
 									<CardTitle>Connect With Me</CardTitle>
 									<CardDescription>

@@ -8,7 +8,7 @@ import {
 	Codepen,
 } from "@/assets/icones";
 import defaultLinks from "@/assets/social.json";
-import { H2, Muted } from "./ui/Typography";
+import { H2, Muted } from "@/components/ui/Typography";
 
 export type SocialLink = {
 	href: string;
@@ -39,7 +39,7 @@ function Footer({
 	const year = new Date().getFullYear();
 
 	return (
-		<footer className="w-full border-t border-border bg-zinc-300 dark:bg-zinc-800">
+		<footer className="w-full border-t border-border bg-zinc-200 dark:bg-zinc-800">
 			<div className="mx-auto max-w-6xl px-6 py-10">
 				<div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
 					<div className="space-y-1 oswald">
