@@ -3,15 +3,18 @@
 		"id": "1",
 		"title": "Web Stat",
 		"description": "A real-time dashboard for tracking the availability and performance of multiple websites. Monitor uptime status, response times, and historical reliability with automatic checks every 5 minutes. Features persistent storage, visual status history, and instant manual checks for all your critical web properties.",
-		"status": "Planning",
+		"status": "In Progress",
 		"technologies": [
-			"ReactJS",
+			"NextJS",
 			"Typescript",
 			"TailwindCSS",
 			"ShadcnUI",
-			"ESLint"
+			"ESLint",
+			"Prisma ORM",
+			"Postgres",
+			"Next Auth"
 		],
-		"progress": 5,
+		"progress": 25,
 		"githubUrl": "https://github.com/Ravish-Ranjan/web-stat",
 		"startDate": "2025-12-01",
 		"estimatedCompletion": "2026-01-15"
