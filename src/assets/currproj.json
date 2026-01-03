@@ -12,9 +12,10 @@
 			"ESLint",
 			"Prisma ORM",
 			"Postgres",
-			"Next Auth"
+			"Next Auth",
+			"Cron Job"
 		],
-		"progress": 25,
+		"progress": 75,
 		"githubUrl": "https://github.com/Ravish-Ranjan/web-stat",
 		"startDate": "2025-12-01",
 		"estimatedCompletion": "2026-01-15"

@@ -45,7 +45,7 @@ function Contact() {
 								<CardContent className="space-y-4">
 									<div className="flex items-center gap-3">
 										<Mail className="h-4 w-4 text-muted-foreground" />
-										<span>ravishranjan2003@gmail.com</span>
+										<span>contact@ravishdev.org</span>
 									</div>
 								</CardContent>
 							</Card>
