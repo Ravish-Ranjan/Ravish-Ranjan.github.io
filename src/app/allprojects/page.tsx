@@ -1,9 +1,18 @@
-import SepHeading from "@/components/SeprateHeading";
-import projects from "@/assets/projects.json";
-import SinProject from "@/components/SingleProject";
+"use client";
+import { useEffect, useState } from "react";
+import SepHeading from "../../components/SeprateHeading";
+import SinProject from "../../components/SingleProject";
 
+function Page() {
+	const [projects, setProjects] = useState<null | ProjectType[]>(null);
 
-function page() {
+	useEffect(() => {
+		fetch("/config/projects.json")
+			.then((res) => res.json())
+			.then((data) => setProjects(data));
+	}, []);
+
+	if (!projects) return null;
 	return (
 		<>
 			<SepHeading>All Projects</SepHeading>
@@ -16,4 +25,4 @@ function page() {
 	);
 }
 
-export default page;
+export default Page;

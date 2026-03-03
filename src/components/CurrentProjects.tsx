@@ -1,28 +1,23 @@
 import CurProj from "@/components/CurrentProjectCard";
 import SepHeading from "@/components/SeprateHeading";
-import curProjects from "@/assets/currproj.json";
-
-type Project = {
-	id: string;
-	title: string;
-	description: string;
-	status: string;
-	technologies: string[];
-	progress: number;
-	githubUrl?: string;
-	liveUrl?: string;
-	startDate: string;
-	estimatedCompletion?: string;
-};
-
-const CurrentProjects: Project[] = curProjects;
+import { useEffect, useState } from "react";
 
 function Current() {
+	const [currentProjects, setCurrentProjects] = useState<
+		null | CurrentProject[]
+	>(null);
+
+	useEffect(() => {
+		fetch("/config/currproj.json")
+			.then((res) => res.json())
+			.then((data) => setCurrentProjects(data));
+	}, []);
+	if (!currentProjects) return null;
 	return (
 		<div id="current" className="grid place-items-center">
 			<SepHeading>Currently Working On</SepHeading>
 			<div className="flex flex-wrap items-center justify-center gap-3 px-4">
-				{CurrentProjects.map((val) => {
+				{currentProjects.map((val) => {
 					return <CurProj project={val} key={val.id} />;
 				})}
 			</div>
