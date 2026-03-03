@@ -1,15 +1,13 @@
+"use client";
 import SepHeading from "@/components/SeprateHeading";
-import allSkills from "@/assets/skills.json";
 import Button from "@/components/ui/button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type SkillCategory = {
 	label: string;
 	colour: string;
 	skills: string[];
 };
-
-const SkillsList: SkillCategory[] = allSkills;
 
 const colourMap: Record<string, string> = {
 	red: "bg-red-200 text-red-900 dark:bg-red-800 dark:text-white",
@@ -48,13 +46,24 @@ function SkillBubble({ text, colour }: { text: string; colour: string }) {
 }
 
 function Skills() {
-	const tags = ["All", ...SkillsList.map((val) => val.label)];
 	const [selected, setSelected] = useState<(typeof tags)[number]>("All");
+	const [skillsList, setCurrentProjects] = useState<null | SkillCategory[]>(
+		null,
+	);
+
+	useEffect(() => {
+		fetch("/config/skills.json")
+			.then((res) => res.json())
+			.then((data) => setCurrentProjects(data));
+	}, []);
+	if (!skillsList) return null;
+
+	const tags = ["All", ...skillsList.map((val) => val.label)];
 
 	const handleTagChange = (): SkillCategory => {
 		if (selected !== "All")
 			return (
-				SkillsList.find((val) => val.label === selected) ?? {
+				skillsList.find((val) => val.label === selected) ?? {
 					label: "",
 					colour: "",
 					skills: [],
@@ -87,15 +96,15 @@ function Skills() {
 			</div>
 			<div className="flex flex-wrap gap-2 justify-center oswald-400 max-w-4xl">
 				{selected === "All"
-					? SkillsList.flatMap((val, i) =>
+					? skillsList.flatMap((val, i) =>
 							val.skills.map((skl, j) => (
 								<SkillBubble
 									text={skl}
 									colour={val.colour}
 									key={`${i} ${j}`}
 								/>
-							))
-					  )
+							)),
+						)
 					: selectedTags.skills.map((val, i) => {
 							return (
 								<SkillBubble
@@ -104,7 +113,7 @@ function Skills() {
 									key={`${i} ${val}`}
 								/>
 							);
-					  })}
+						})}
 			</div>
 		</div>
 	);

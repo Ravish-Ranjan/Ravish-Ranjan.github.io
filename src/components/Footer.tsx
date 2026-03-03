@@ -1,3 +1,4 @@
+"use client";
 import {
 	GitHub,
 	LinkedIn,
@@ -7,36 +8,29 @@ import {
 	Instagram,
 	Codepen,
 } from "@/assets/icones";
-import defaultLinks from "@/assets/social.json";
 import { H2, Muted } from "@/components/ui/Typography";
+import { useEffect, useState } from "react";
 
-export type SocialLink = {
-	href: string;
-	platform:
-		| "github"
-		| "linkedin"
-		| "x"
-		| "email"
-		| "website"
-		| "instagram"
-		| "codepen"
-		| string;
-	label?: string;
-};
 interface FooterProps {
 	name?: string;
 	tagline?: string;
-	links?: SocialLink[];
 	contactHref?: string;
 	showContact?: boolean;
 }
 
 function Footer({
-	links = defaultLinks,
 	contactHref = "/contact",
 	showContact = false,
 }: FooterProps) {
 	const year = new Date().getFullYear();
+	const [links, setLinks] = useState<null | SocialLinkType[]>(null);
+
+	useEffect(() => {
+		fetch("/config/social.json")
+			.then((res) => res.json())
+			.then((data) => setLinks(data));
+	}, []);
+	if (!links) return null;
 
 	return (
 		<footer className="w-full border-t border-border bg-zinc-200 dark:bg-zinc-800">
@@ -108,7 +102,7 @@ function SocialIcon({
 	platform,
 	className,
 }: {
-	platform: SocialLink["platform"];
+	platform: SocialLinkType["platform"];
 	className?: string;
 }) {
 	const p = platform.toLowerCase();
