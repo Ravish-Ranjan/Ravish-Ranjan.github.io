@@ -1,0 +1,32 @@
+[
+	{
+		"platform": "github",
+		"href": "https://github.com/Ravish-Ranjan",
+		"label": "GitHub"
+	},
+	{
+		"platform": "linkedin",
+		"href": "https://www.linkedin.com/in/ravish-ranjan-1a0757238/",
+		"label": "LinkedIn"
+	},
+	{
+		"platform": "website",
+		"href": "https://www.ravishdev.org",
+		"label": "Website"
+	},
+	{
+		"platform": "email",
+		"href": "mailto:contact@ravishdev.org",
+		"label": "Email"
+	},
+	{
+		"platform": "instagram",
+		"href": "https://www.instagram.com/_ravishranjan_/",
+		"label": "Instagram"
+	},
+	{
+		"platform": "codepen",
+		"href": "https://codepen.io/_ravishranjan_",
+		"label": "CodePen"
+	}
+]
