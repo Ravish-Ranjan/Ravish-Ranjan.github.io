@@ -8,10 +8,10 @@ import {
 	SidebarMenuItem,
 } from "@/components/ui/sidebar";
 import { Large, Small } from "@/components/ui/Typography";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 
 function CustomSidebar() {
-	const navigate = useNavigate();
+	const router = useRouter();
 	const handleScrollTo = (id: string) => {
 		const element = document.getElementById(id);
 		if (element) {
@@ -49,7 +49,7 @@ function CustomSidebar() {
 								<Small>Projects</Small>
 							</SidebarMenuButton>
 							<SidebarMenuButton
-								onClick={() => navigate("/allprojects")}
+								onClick={() => router.push("/allprojects")}
 							>
 								<Small>All Projects</Small>
 							</SidebarMenuButton>

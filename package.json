@@ -1,61 +1,35 @@
 {
-	"name": "portfolio",
-	"private": true,
-	"version": "0.0.0",
-	"type": "module",
-	"author": {
-		"name": "Ravish Ranjan",
-		"email": "contact@ravishdev.org",
-		"url": "https://github.com/Ravish-Ranjan"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Ravish-Ranjan/Ravish-Ranjan.github.io.git"
-	},
-	"bugs": {
-		"url": "https://github.com/Ravish-Ranjan/Ravish-Ranjan.github.io/issues"
-	},
-	"homepage": "https://www/ravishdev.org",
-	"scripts": {
-		"dev": "vite",
-		"build": "tsc -b && vite build",
-		"lint": "eslint .",
-		"preview": "vite preview",
-		"sap": "git checkout release && cp -r ./dist/* ./ && git add . && git commit -m \"deployment\" && git push origin release && git checkout develop",
-		"deploy": "git checkout develop && npm run build && git add . && git commit -m \"building for deployment\" && npm run sap"
-	},
-	"dependencies": {
-		"@radix-ui/react-dialog": "^1.1.15",
-		"@radix-ui/react-separator": "^1.1.7",
-		"@radix-ui/react-slot": "^1.2.3",
-		"@radix-ui/react-tooltip": "^1.2.8",
-		"class-variance-authority": "^0.7.1",
-		"clsx": "^2.1.1",
-		"embla-carousel-react": "^8.6.0",
-		"lucide-react": "^0.542.0",
-		"react": "^19.1.1",
-		"react-dom": "^19.1.1",
-		"react-router-dom": "^7.10.1",
-		"tailwind-merge": "^3.3.1",
-		"zustand": "^5.0.8"
-	},
-	"devDependencies": {
-		"@eslint/js": "^9.33.0",
-		"@tailwindcss/vite": "^4.1.12",
-		"@types/estree": "^1.0.8",
-		"@types/node": "^24.3.0",
-		"@types/react": "^19.1.10",
-		"@types/react-dom": "^19.1.7",
-		"@vitejs/plugin-react-swc": "^4.0.0",
-		"eslint": "^9.33.0",
-		"eslint-plugin-react-hooks": "^5.2.0",
-		"eslint-plugin-react-refresh": "^0.4.20",
-		"globals": "^16.3.0",
-		"shx": "^0.4.0",
-		"tailwindcss": "^4.1.12",
-		"tw-animate-css": "^1.3.8",
-		"typescript": "~5.8.3",
-		"typescript-eslint": "^8.39.1",
-		"vite": "^7.1.2"
-	}
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.576.0",
+    "next": "16.1.6",
+    "radix-ui": "^1.4.3",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "tailwind-merge": "^3.5.0",
+    "zustand": "^5.0.11"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "babel-plugin-react-compiler": "1.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "shadcn": "^3.8.5",
+    "tailwindcss": "^4",
+    "tw-animate-css": "^1.4.0",
+    "typescript": "^5"
+  }
 }

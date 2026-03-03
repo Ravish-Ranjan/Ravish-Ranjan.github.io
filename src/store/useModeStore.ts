@@ -1,55 +1,58 @@
+"use client";
 import { create } from "zustand";
 
-type Mode = "dark" | "light" | "system";
+const MODE_KEY = "web-stat-theme";
 
-interface ModeProps {
+type Mode = "light" | "dark" | "system";
+
+interface ModeStore {
 	mode: Mode;
-	setMode: (inputMode: Mode) => void;
-	getTheme: () => "dark" | "light";
+	setMode: (mode: Mode) => void;
+	initMode: () => void;
+	getTheme: () => "light" | "dark";
 }
 
-const useModeStore = create<ModeProps>((set) => ({
-	mode: (() => {
-		const value = localStorage.getItem("portfolio-ui-mode");
-		const val =
-			value === "dark" || value === "light" || value === "system"
-				? value
-				: "system";
-
-		// Apply initial theme
-		applyTheme(val);
-
-		return val;
-	})(),
-	setMode: (inputMode: Mode) => {
-		localStorage.setItem("portfolio-ui-mode", inputMode);
-		set({ mode: inputMode });
-		applyTheme(inputMode);
+export default create<ModeStore>((set, get) => ({
+	mode: "system",
+	setMode: (mode) => {
+		localStorage.setItem(MODE_KEY, mode);
+		set({ mode });
+		applyTheme(mode);
 	},
-	getTheme: (): "dark" | "light" => {
-		const currentMode = useModeStore.getState().mode;
-		if (currentMode === "system") {
+	initMode: () => {
+		const saved = (localStorage.getItem(MODE_KEY) as Mode) || "system";
+		if (saved) {
+			set({ mode: saved });
+			applyTheme(saved);
+		} else {
+			const systemPref = window.matchMedia("(prefers-color-scheme: dark)")
+				.matches
+				? "dark"
+				: "light";
+			set({ mode: systemPref });
+			if (systemPref === "dark")
+				document.documentElement.classList.add("dark");
+		}
+	},
+	getTheme: () => {
+		if (get().mode === "system")
 			return window.matchMedia("(prefers-color-scheme: dark)").matches
 				? "dark"
 				: "light";
-		}
-		return currentMode;
+		if (get().mode === "light") return "light";
+		if (get().mode === "dark") return "dark";
+		return "light";
 	},
 }));
 
-// helper to apply the correct class
 function applyTheme(mode: Mode) {
-	document.documentElement.classList.remove("dark", "light");
-
-	if (mode === "system") {
-		const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
-			.matches
-			? "dark"
-			: "light";
-		document.documentElement.classList.add(systemTheme);
+	if (
+		mode === "dark" ||
+		(mode === "system" &&
+			window.matchMedia("(prefers-color-scheme: dark)").matches)
+	) {
+		document.documentElement.classList.add("dark");
 	} else {
-		document.documentElement.classList.add(mode);
+		document.documentElement.classList.remove("dark");
 	}
 }
-
-export default useModeStore;

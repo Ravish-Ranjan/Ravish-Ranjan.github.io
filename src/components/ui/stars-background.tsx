@@ -51,7 +51,7 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
 					opacity: Math.random() * 0.5 + 0.5,
 					twinkleSpeed: shouldTwinkle
 						? minTwinkleSpeed +
-						  Math.random() * (maxTwinkleSpeed - minTwinkleSpeed)
+							Math.random() * (maxTwinkleSpeed - minTwinkleSpeed)
 						: null,
 				};
 			});
@@ -62,7 +62,7 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
 			twinkleProbability,
 			minTwinkleSpeed,
 			maxTwinkleSpeed,
-		]
+		],
 	);
 
 	useEffect(() => {
@@ -123,7 +123,7 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
 						0.5 +
 						Math.abs(
 							Math.sin((Date.now() * 0.001) / star.twinkleSpeed) *
-								0.5
+								0.5,
 						);
 				}
 			});
@@ -142,7 +142,7 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
 		<canvas
 			ref={canvasRef}
 			className={cn("h-full w-full absolute inset-0", className)}
-			style={{height:document.body.scrollHeight}}
+			style={{ height: "1000px" }}
 		/>
 	);
 };

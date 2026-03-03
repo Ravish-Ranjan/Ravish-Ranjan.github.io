@@ -2,7 +2,7 @@ import SepHeading from "@/components/SeprateHeading";
 import proj from "@/assets/projects.json";
 import SinProject from "@/components/SingleProject";
 import { Small } from "@/components/ui/Typography";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 function Projects({ all = false }: { all?: boolean }) {
 	const projects = all ? proj : proj.slice(0, 6);
@@ -15,7 +15,7 @@ function Projects({ all = false }: { all?: boolean }) {
 				})}
 			</div>
 			<Small className="mt-6">
-				<Link to={"/allprojects"}>View More</Link>
+				<Link href={"/allprojects"}>View More</Link>
 			</Small>
 		</div>
 	);

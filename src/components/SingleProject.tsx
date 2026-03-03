@@ -1,6 +1,8 @@
-import { Link } from "@/assets/icones";
+import { LinkIcon } from "@/assets/icones";
 import Button from "@/components/ui/button";
 import { Muted, Small } from "@/components/ui/Typography";
+import Image from "next/image";
+import Link from "next/link";
 
 interface ProjectProps {
 	project: {
@@ -16,9 +18,11 @@ function SinProject({ project }: ProjectProps) {
 			className="flex flex-col items-center h-72 gap-2 p-1 rounded-lg w-72 outline-2 outline-gray-500 hover:outline-sky-900 hover:outline-4 hover:dark:outline-sky-300 backdrop-blur-xs"
 			style={{ transition: ".25s ease-in-out" }}
 		>
-			<img
+			<Image
 				src={project.image}
 				alt={project.title}
+				height={114}
+				width={288}
 				style={{ aspectRatio: "16/9" }}
 				className="h-1/2 w-full object-fill rounded-lg img-back bg-zinc-200 dark:bg-zinc-800"
 			/>
@@ -30,14 +34,14 @@ function SinProject({ project }: ProjectProps) {
 					</Muted>
 				</div>
 				<Button className="px-2 cursor-pointer w-full" variant={"secondary"} asChild>
-					<a
+					<Link
 						href={project.link}
 						target="_blank"
 						className="cursor-pointer"
 					>
-						<Link />
+						<LinkIcon />
 						Visit
-					</a>
+					</Link>
 				</Button>
 			</div>
 		</div>

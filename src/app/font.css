@@ -1,6 +1,6 @@
 @font-face {
     font-family: oswald;
-    src: url("/src/assets/oswald.woff2") format("woff2");
+    src: url("../assets/oswald.woff2") format("woff2");
     /* font-display: swap; */
 }
 

@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import Button from "@/components/ui/button";
 import { H1, P } from "@/components/ui/Typography";
-import illus from "@/assets/heroillus.svg";
+import Image from "next/image";
 
 function Hero() {
 	const handleScrollTo = (id: string) => {
@@ -16,9 +16,11 @@ function Hero() {
 			style={{ minHeight: "80vh" }}
 			className="p-8 flex flex-col justify-evenly items-center md:flex-row-reverse w-7/8 mx-auto gap-4 -mt-4"
 		>
-			<img
-				src={illus}
+			<Image
+				src="/heroillus.svg"
 				alt="image"
+				width={10}
+				height={10}
 				className="w-full md:w-5/12 drop-shadow-2xl"
 			/>
 			<div className="w-full md:w-7/12 h-auto grid">
@@ -27,7 +29,7 @@ function Hero() {
 						"oswald drop-shadow-[3px_3px_0px] drop-shadow-zinc-400 dark:drop-shadow-zinc-700 grid md:flex place-items-center gap-2 w-full"
 					)}
 				>
-					It's Me,{" "}
+					It&apos;s Me,{" "}
 					<span
 						className={clsx(
 							"bg-clip-text text-transparent",
