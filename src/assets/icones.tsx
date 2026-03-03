@@ -450,7 +450,7 @@ export function Globe(props: SVGProps<SVGSVGElement>) {
 	);
 }
 
-export function Link(props: SVGProps<SVGSVGElement>) {
+export function LinkIcon(props: SVGProps<SVGSVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"

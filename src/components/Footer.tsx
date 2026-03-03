@@ -3,7 +3,7 @@ import {
 	LinkedIn,
 	Mail,
 	Globe,
-	Link,
+	LinkIcon,
 	Instagram,
 	Codepen,
 } from "@/assets/icones";
@@ -67,7 +67,7 @@ function Footer({
 										target="_blank"
 										rel="noopener noreferrer"
 										title={label}
-										className="text-muted-foreground transition-colors hover:text-blue-600"
+										className="text-muted-foreground transition-colors hover:text-cyan-500"
 									>
 										<SocialIcon
 											platform={link.platform}
@@ -123,7 +123,7 @@ function SocialIcon({
 		return <Codepen className={className} aria-hidden="true" />;
 	if (p === "website")
 		return <Globe className={className} aria-hidden="true" />;
-	return <Link className={className} aria-hidden="true" />;
+	return <LinkIcon className={className} aria-hidden="true" />;
 }
 
 function humanizePlatform(p: string) {

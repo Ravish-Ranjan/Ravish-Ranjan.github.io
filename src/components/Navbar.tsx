@@ -1,12 +1,14 @@
+"use client";
 import ThemeToggle from "@/components/ThemeToggle";
 import Button from "@/components/ui/button";
 import { SidebarTrigger } from "@/components/ui/sidebar";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
-// Navbar.tsx
 function Navbar() {
-	const navigate = useNavigate();
-	const { pathname } = useLocation();
+	const router = useRouter();
+	const pathname = usePathname();
 
 	const handleScrollTo = (id: string) => {
 		const element = document.getElementById(id);
@@ -23,17 +25,19 @@ function Navbar() {
 					variant={"outline"}
 				/>
 			)}
-			<img
-				src="./logo.webp"
+			<Image
+				src="/logo.webp"
 				alt="Logo"
-				onClick={() => navigate("/")}
+				onClick={() => router.push("/")}
+				width={40}
+				height={40}
 				className=" cursor-pointer mr-auto h-10 drop-shadow-[0px_0px_3px] drop-shadow-zinc-600 dark:drop-shadow-zinc-200"
 			/>
 			<div className="gap-1 flex group oswald ">
 				{pathname === "/allprojects" ? (
 					<Button
 						variant={"link"}
-						onClick={() => navigate("/")}
+						onClick={() => router.push("/")}
 						className="text-teal-800 dark:text-teal-300 cursor-pointer"
 					>
 						Home Page
@@ -72,7 +76,7 @@ function Navbar() {
 							variant={"link"}
 							className="text-teal-800 dark:text-teal-300 cursor-pointer hidden md:flex"
 						>
-							<Link to={"/allprojects"}>All Projects</Link>
+							<Link href={"/allprojects"}>All Projects</Link>
 						</Button>
 						<Button
 							variant={"link"}

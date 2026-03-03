@@ -44,55 +44,55 @@
 	{
 		"title": "Notes",
 		"link": "https://notes-qgg5.onrender.com",
-		"image": "media/notes.webp",
+		"image": "/media/notes.webp",
 		"description": "an full-stack(MERN) notes web PWA app"
 	},
 	{
 		"title": "Melody",
 		"link": "https://github.com/Ravish-Ranjan/melody",
-		"image": "media/melody.webp",
+		"image": "/media/melody.webp",
 		"description": "place to rate your favorite songs and see it climb leaderboard"
 	},
 	{
 		"title": "Qrcode maker",
 		"link": "https://ravishdev.org/qrcode/",
-		"image": "media/qrcode.webp",
+		"image": "/media/qrcode.webp",
 		"description": " a site to make and customize your qrcodes"
 	},
 	{
 		"title": "Barcode Generator",
 		"link": "https://ravishdev.org/barcode/",
-		"image": "media/barcode.webp",
+		"image": "/media/barcode.webp",
 		"description": "website to generate barcode"
 	},
 	{
 		"title": "RChats",
 		"link": "https://rchats.ravishdev.org",
-		"image": "media/rchats.webp",
+		"image": "/media/rchats.webp",
 		"description": "an full-stack(MERN) Realtime chat app"
 	},
 	{
 		"title": "Markdown Previewer",
 		"link": "https://ravishdev.org/markdown-previewer/",
-		"image": "media/markdown-previewer.webp",
+		"image": "/media/markdown-previewer.webp",
 		"description": "website to preview your markdown"
 	},
 	{
 		"title": "Http-Codes",
 		"link": "https://ravishdev.org/http-codes/",
-		"image": "media/http-codes.webp",
+		"image": "/media/http-codes.webp",
 		"description": "Ai generated image library of http status codes"
 	},
 	{
 		"title": "Quotes",
 		"link": "https://ravishdev.org/quotes/",
-		"image": "media/quotes.webp",
+		"image": "/media/quotes.webp",
 		"description": "a website for quotes which you can share with others"
 	},
 	{
 		"title": "Fluke",
 		"link": "https://github.com/Ravish-Ranjan/fluke",
-		"image": "media/fluke.webp",
+		"image": "/media/fluke.webp",
 		"description": "a platform to watch and download movies and shows"
 	}
 ]

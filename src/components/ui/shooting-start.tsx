@@ -121,8 +121,7 @@ export const ShootingStars: React.FC<ShootingStarsProps> = ({
 		<svg
 			ref={svgRef}
 			className={cn("w-full h-full absolute inset-0", className)}
-			style={{height:document.body.scrollHeight}}
-
+			style={{ height: "1000px" }}
 		>
 			{star && (
 				<rect
