@@ -9,7 +9,6 @@ import { usePathname, useRouter } from "next/navigation";
 function Navbar() {
 	const router = useRouter();
 	const pathname = usePathname();
-
 	const handleScrollTo = (id: string) => {
 		const element = document.getElementById(id);
 		if (element) {
@@ -19,7 +18,7 @@ function Navbar() {
 
 	return (
 		<div className="flex justify-end-safe w-full items-center gap-2 p-2 bg-zinc-200 dark:bg-zinc-800">
-			{pathname !== "/allprojects" && (
+			{pathname !== "/allprojects/" && (
 				<SidebarTrigger
 					className="p-2 h-10 w-10 rounded-xl md:hidden mr-2"
 					variant={"outline"}
@@ -34,7 +33,7 @@ function Navbar() {
 				className=" cursor-pointer mr-auto h-10 drop-shadow-[0px_0px_3px] drop-shadow-zinc-600 dark:drop-shadow-zinc-200"
 			/>
 			<div className="gap-1 flex group oswald ">
-				{pathname === "/allprojects" ? (
+				{pathname === "/allprojects/" ? (
 					<Button
 						variant={"link"}
 						onClick={() => router.push("/")}
