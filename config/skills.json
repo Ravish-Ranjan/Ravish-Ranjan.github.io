@@ -45,9 +45,7 @@
 			"Mongoose",
 			"MongoDb Atlas",
 			"Supabase",
-			"SQLite",
-			"Prisma ORM",
-			"S3"
+			"S3 Storage"
 		]
 	},
 	{
@@ -74,7 +72,7 @@
 		"label": "Others",
 		"icon": "",
 		"colour": "red",
-		"skills": ["Git", "Linux", "Postman", "electron", "expo","JWT","Pandas","Numpy","ScikitLearn","Docker","DNS"]
+		"skills": ["Git", "Linux", "Postman", "electron", "expo","JWT","Pandas","Numpy","ScikitLearn"]
 	},
 	{
 		"label": "Tools",
