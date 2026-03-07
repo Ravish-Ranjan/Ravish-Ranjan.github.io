@@ -1,5 +1,11 @@
 [
 	{
+		"title": "t-serve",
+		"link": "https://www.npmjs.com/package/@ravishranjan/t-serve",
+		"image": "/media/t-serve.webp",
+		"description": "A lightweight, terminal-based service manager for Linux systems using systemctl."
+	},
+	{
 		"title": "LogiSick",
 		"link": "https://logisick.ravishdev.org",
 		"image": "/media/logisick.webp",

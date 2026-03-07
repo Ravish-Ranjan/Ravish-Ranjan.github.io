@@ -43,7 +43,9 @@
 			"PostgreSQL",
 			"MySQL",
 			"Mongoose",
-			"MongoDb Atlas"
+			"MongoDb Atlas",
+			"Supabase",
+			"S3 Storage"
 		]
 	},
 	{
