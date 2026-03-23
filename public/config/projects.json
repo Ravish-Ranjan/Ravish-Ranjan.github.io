@@ -1,5 +1,11 @@
 [
 	{
+		"title": "Payme",
+		"link": "https://payme.ravishdev.org",
+		"image": "/media/payme.webp",
+		"description": "A simple, fast, and secure way to generate and share UPI payment links. Generate dynamic payment pages in seconds and share them with anyone, anywhere."
+	},
+	{
 		"title": "t-serve",
 		"link": "https://www.npmjs.com/package/@ravishranjan/t-serve",
 		"image": "/media/t-serve.webp",
