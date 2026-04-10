@@ -79,7 +79,7 @@
 	},
 	{
 		"title": "RChats",
-		"link": "https://rchats.ravishdev.org",
+		"link": "https://rchats.onrender.com",
 		"image": "/media/rchats.webp",
 		"description": "an full-stack(MERN) Realtime chat app"
 	},
