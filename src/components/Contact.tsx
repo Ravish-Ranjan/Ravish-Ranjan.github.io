@@ -80,7 +80,7 @@ function Contact() {
 											asChild
 										>
 											<a
-												href="https://linkedin.com/in/ravish-ranjan-1a0757238"
+												href="https://linkedin.com/in/ravish-ranjan-dev"
 												target="_blank"
 											>
 												<LinkedIn className="h-4 w-4" />
