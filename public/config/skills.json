@@ -39,6 +39,7 @@
 		"icon": "",
 		"colour": "emerald",
 		"skills": [
+			"SQLite",
 			"MongoDB",
 			"PostgreSQL",
 			"MySQL",
@@ -78,6 +79,6 @@
 		"label": "Tools",
 		"icon": "",
 		"colour": "violet",
-		"skills": ["VS Code", "GitHub Actions", "NPM","Bash Script", "pnpm"]
+		"skills": ["VS Code", "GitHub Actions", "NPM","Bash Script", "pnpm","CI/CD","Docker"]
 	}
 ]
