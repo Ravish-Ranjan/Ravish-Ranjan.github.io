@@ -28,5 +28,10 @@
 		"platform": "codepen",
 		"href": "https://codepen.io/_ravishranjan_",
 		"label": "CodePen"
+	},
+	{
+		"platform": "leetcode",
+		"href": "https://leetcode.com/u/ravishranjan/",
+		"label": "LeetCode"
 	}
 ]
