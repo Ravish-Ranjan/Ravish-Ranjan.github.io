@@ -7,6 +7,7 @@ import {
 	LinkIcon,
 	Instagram,
 	Codepen,
+	LeetCode,
 } from "@/assets/icones";
 import { H2, Muted } from "@/components/ui/Typography";
 import { useEffect, useState } from "react";
@@ -117,6 +118,8 @@ function SocialIcon({
 		return <Codepen className={className} aria-hidden="true" />;
 	if (p === "website")
 		return <Globe className={className} aria-hidden="true" />;
+	if (p === "leetcode")
+		return <LeetCode className={className} aria-hidden="true" />;
 	return <LinkIcon className={className} aria-hidden="true" />;
 }
 
@@ -129,6 +132,7 @@ function humanizePlatform(p: string) {
 		email: "Email",
 		website: "Website",
 		instagram: "Instagram",
+		leetcode: "LeetCode",
 	};
 	return map[p.toLowerCase()] || "Link";
 }
