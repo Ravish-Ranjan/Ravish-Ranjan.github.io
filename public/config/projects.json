@@ -1,10 +1,4 @@
 [
-    {
-		"title": "Pingu",
-		"link": "https://pingu.ravishdev.org",
-		"image": "/media/payme.webp",
-		"description": "Modern, full-stack notes application with cross-platform support. Pingu provides a seamless note-taking experience with offline-first architecture, real-time sync, and mobile support via Capacitor."
-	},
 	{
 		"title": "Payme",
 		"link": "https://payme.ravishdev.org",
