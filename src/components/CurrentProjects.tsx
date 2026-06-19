@@ -16,7 +16,7 @@ function Current() {
 	return (
 		<div id="current" className="grid place-items-center">
 			<SepHeading>Currently Working On</SepHeading>
-			<div className="flex flex-wrap items-center justify-center gap-3 px-4">
+			<div className="flex flex-wrap items-stretch justify-center gap-3 px-4">
 				{currentProjects.map((val) => {
 					return <CurProj project={val} key={val.id} />;
 				})}

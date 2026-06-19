@@ -1,9 +1,9 @@
-name: Deploy Next.js to GitHub Pages
+name: nextjs building
 
 on:
     push:
-        branches:
-            - develop
+        branches: [develop]
+    workflow_dispatch:
 
 jobs:
     build-deploy:
@@ -15,10 +15,12 @@ jobs:
 
             - uses: actions/setup-node@v4
               with:
-                  node-version: 20
+                  node-version: 22
+                  cache: "npm"
 
-            - run: npm install
+            - run: npm ci
             - run: npm run build
+            - run: touch ./out/.nojekyll
 
             - uses: peaceiris/actions-gh-pages@v3
               with:
