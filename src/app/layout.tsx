@@ -6,6 +6,13 @@ import ThemeProvider from "@/context/ThemeProvider";
 import Footer from "@/components/Footer";
 import { StarsBackground } from "@/components/ui/stars-background";
 import { ShootingStars } from "@/components/ui/shooting-start";
+import { Inter, Noto_Serif } from "next/font/google";
+import { cn } from "@/lib/utils";
+import { TooltipProvider } from "@/components/ui/tooltip";
+
+const notoSerifHeading = Noto_Serif({subsets:['latin'],variable:'--font-heading'});
+
+const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
 	title: "Portfolio | Ravish Ranjan",
@@ -23,17 +30,26 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html
+			lang="en"
+			className={cn(
+				"font-sans",
+				inter.variable,
+				notoSerifHeading.variable,
+			)}
+		>
 			<body className="min-h-screen bg-zinc-200 dark:bg-zinc-900">
 				<ThemeProvider>
-					<SidebarProvider
-						defaultOpen={false}
-						className="flex flex-col"
-					>
-						<Navbar />
-						{children}
-						<Footer />
-					</SidebarProvider>
+					<TooltipProvider>
+						<SidebarProvider
+							defaultOpen={false}
+							className="flex flex-col"
+						>
+							<Navbar />
+							{children}
+							<Footer />
+						</SidebarProvider>
+					</TooltipProvider>
 					<StarsBackground className="-z-20 bg-zinc-200 dark:bg-zinc-900 h-full" />
 					<ShootingStars className="-z-10 min-h-screen" />
 				</ThemeProvider>

@@ -16,7 +16,7 @@ function Projects({ all = false }: { all?: boolean }) {
 			.then((data) => setCurrentProjects(data));
 	}, []);
 	if (!allProjects) return null;
-	const projects = all ? allProjects : allProjects.slice(0, 6);
+	const projects = all ? allProjects : allProjects.slice(0, 8);
 	return (
 		<div id="projects" className="grid gap-3 place-items-center min-h-96">
 			<SepHeading>Projects</SepHeading>

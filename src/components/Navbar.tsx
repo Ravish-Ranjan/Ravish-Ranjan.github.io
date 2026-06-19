@@ -24,14 +24,6 @@ function Navbar() {
 					variant={"outline"}
 				/>
 			)}
-			<Image
-				src="/logo.webp"
-				alt="Logo"
-				onClick={() => router.push("/")}
-				width={40}
-				height={40}
-				className=" cursor-pointer mr-auto h-10 drop-shadow-[0px_0px_3px] drop-shadow-zinc-600 dark:drop-shadow-zinc-200"
-			/>
 			<div className="gap-1 flex group oswald ">
 				{pathname === "/allprojects/" ? (
 					<Button

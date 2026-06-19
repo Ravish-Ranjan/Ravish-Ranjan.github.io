@@ -1,5 +1,11 @@
 [
 	{
+		"title": "Micro-ESP",
+		"link": "https://github.com/Ravish-Ranjan/micro-esp",
+		"image": "/media/micro-esp.webp",
+		"description": "A simple firmware micro-kernel for ESP32 NodeMCU board with an interactive shell and file system support."
+	},
+	{
 		"title": "Payme",
 		"link": "https://payme.ravishdev.org",
 		"image": "/media/payme.webp",

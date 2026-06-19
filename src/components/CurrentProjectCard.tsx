@@ -41,11 +41,11 @@ function CurProj({ project }: { project: Project }) {
 	return (
 		<Card
 			key={project.id}
-			className="group hover:shadow-lg transition-all duration-300 border-border hover:border-primary/50 oswald max-w-md"
+			className="group hover:shadow-lg hover:outline-sky-900 hover:outline-4 hover:dark:outline-sky-300 oswald w-11/12 md:w-md"
 		>
 			<CardHeader className="space-y-3">
 				<div className="flex items-center justify-between">
-					<CardTitle className="text-xl font-semibold text-card-foreground group-hover:text-primary transition-colors">
+					<CardTitle className="text-xl font-semibold text-card-foreground transition-colors">
 						{project.title}
 					</CardTitle>
 					<Badge className={getStatusColor(project.status)}>
@@ -57,9 +57,9 @@ function CurProj({ project }: { project: Project }) {
 				</CardDescription>
 			</CardHeader>
 
-			<CardContent className="space-y-4">
+			<CardContent className="flex flex-col gap-4">
 				{/* Progress Bar */}
-				<div className="space-y-2">
+				<div className="grid gap-">
 					<div className="flex justify-between items-center text-md">
 						<span className="text-accent-foreground">Progress</span>
 						<span className="font-medium text-foreground">
@@ -75,7 +75,7 @@ function CurProj({ project }: { project: Project }) {
 				</div>
 
 				{/* Technologies */}
-				<div className="space-y-2">
+				<div className="grid gap-2">
 					<span className="text-md font-medium text-foreground oswald-400">
 						Technologies
 					</span>
@@ -93,7 +93,7 @@ function CurProj({ project }: { project: Project }) {
 				</div>
 
 				{/* Timeline */}
-				<div className="space-y-2 text-sm text-muted-foreground">
+				<div className="grid gap-2 text-sm text-muted-foreground align-end">
 					<div className="flex items-center gap-2">
 						<Calendar className="w-4 h-4" />
 						<span>
@@ -115,7 +115,7 @@ function CurProj({ project }: { project: Project }) {
 				</div>
 
 				{/* Action Buttons */}
-				<div className="flex gap-2 pt-2">
+				<div className="flex gap-2 pt-2 align-end">
 					{project.githubUrl && (
 						<Button
 							variant="outline"

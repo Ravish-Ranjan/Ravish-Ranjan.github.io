@@ -1,6 +1,23 @@
 [
 	{
 		"id": "1",
+		"title": "Micro-ESP",
+		"description": "A simple firmware micro-kernel for ESP32 NodeMCU board with an interactive shell and file system support. This micro-kernel is built using ESP-IDF tool, specially designed for NodeMCU ESP32 board.",
+		"status": "In Progress",
+		"technologies": [
+			"ESP-IDF",
+			"C",
+			"SPIFFS",
+			"CMake",
+			"Node-MCU32"
+		],
+		"progress": 75,
+		"githubUrl": "https://github.com/Ravish-Ranjan/micro-esp",
+		"startDate": "2026-06-07",
+		"estimatedCompletion": "2026-07-29"
+	},
+	{
+		"id": "2",
 		"title": "Web Stat",
 		"description": "A real-time dashboard for tracking the availability and performance of multiple websites. Monitor uptime status, response times, and historical reliability with automatic checks every 5 minutes. Features persistent storage, visual status history, and instant manual checks for all your critical web properties.",
 		"status": "In Progress",
@@ -18,6 +35,6 @@
 		"progress": 55,
 		"githubUrl": "https://github.com/Ravish-Ranjan/web-stat",
 		"startDate": "2025-12-01",
-		"estimatedCompletion": "2026-06-15"
+		"estimatedCompletion": "2026-12-15"
 	}
 ]
