@@ -1,7 +1,7 @@
 [
 	{
 		"title": "t-tunnel",
-		"link": "https://github.com/Ravish-Ranjan/t-tunnel",
+		"link": "https://www.npmjs.com/package/@ravishranjan/t-tunnel",
 		"image": "/media/t-tunnel.webp",
 		"description": "1A lightweight, terminal-based manager for Cloudflare Tunnels (cloudflared)."
 	},
