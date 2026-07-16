@@ -1,8 +1,8 @@
 import { P, Small } from "@/components/ui/Typography";
 import clsx from "clsx";
-import SepHeading from "@/components/SeprateHeading";
+import SepHeading from "@/components/SepratorHeading";
 import Image from "next/image";
-import profilePic from "@/../public/media/prof.webp"
+import profilePic from "@/../public/media/prof.webp";
 
 const skills = [
 	"ReactJS",
@@ -28,7 +28,7 @@ function Marq({ rev = false }: { rev?: boolean }) {
 			className={clsx(
 				"flex w-full justify-center gap-2 py-1 flex-wrap overflow-y-hidden h-10",
 				"bg-linear-to-r bg-[linear-gradient(to_right,transparent_0%,var(--color-zinc-400)_20%,var(--color-zinc-400)_80%,transparent_100%)]",
-				"dark:bg-[linear-gradient(to_right,transparent_0%,var(--color-zinc-700)_10%,var(--color-zinc-700)_90%,transparent_100%)]",
+				"dark:bg-[linear-gradient(to_right,transparent_0%,var(--color-zinc-800)_10%,var(--color-zinc-800)_90%,transparent_100%)]",
 			)}
 		>
 			{skls.map((val, i) => (
@@ -52,17 +52,17 @@ function About() {
 		>
 			<SepHeading>About Me</SepHeading>
 			<Marq />
-			<div className="w-11/12 mx-4 md:mx-0 flex-col md:flex-row flex justify-center items-center gap-2 bg-zinc-200 dark:bg-zinc-800 p-4 rounded-2xl shadow-2xl">
+			<div className="w-11/12 mx-4 md:mx-0 flex-col md:flex-row flex justify-center items-center gap-2 bg-zinc-200 dark:bg-zinc-900 p-4 rounded-2xl shadow-2xl">
 				<Image
 					src={profilePic}
 					className="w-3/4 sm:w-1/2 md:w-1/4 img-back shadow-[8px_8px_0px] rounded-2xl shadow-zinc-500 dark:shadow-zinc-700"
 					alt="profile picture"
 				/>
 				<P className="w-2/3 text-lg md:text-2xl col-span-1 oswald-300 text-center text-balance md:col-span-3 first-letter:text-5xl first-letter:text-teal-500">
-					&quot;A highly motivated computer science student with experience
-					in many programming languages and web development. Eager to
-					apply my skills and knowledge to contribute to the success
-					of a well-regarded Organization.
+					&quot;A highly motivated computer science student with
+					experience in many programming languages and web
+					development. Eager to apply my skills and knowledge to
+					contribute to the success of a well-regarded Organization.
 				</P>
 			</div>
 			<Marq rev={true} />

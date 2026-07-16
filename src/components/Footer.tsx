@@ -34,20 +34,20 @@ function Footer({
 	if (!links) return null;
 
 	return (
-		<footer className="w-full border-t border-border bg-zinc-200 dark:bg-zinc-800">
-			<div className="mx-auto max-w-6xl px-6 py-10">
-				<div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-					<div className="space-y-1 oswald">
-						<H2>Ravish Ranjan</H2>
+		<footer className="w-full border-t border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50">
+			<div className="mx-auto max-w-6xl px-6 py-12">
+				<div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+					<div className="space-y-2 oswald">
+						<H2 className="text-2xl font-bold">Ravish Ranjan</H2>
 						<Muted className="text-sm text-muted-foreground text-pretty">
-							Looking forward for your response. Concider me for
-							the post for Full-Stack Developer.
+							Full-Stack Web Developer crafting beautiful,
+							performant applications
 						</Muted>
 					</div>
 
 					<nav
 						aria-label="Social links"
-						className="flex items-center gap-4"
+						className="flex items-center gap-6"
 					>
 						{links
 							.filter((l) => l?.href)
@@ -62,7 +62,7 @@ function Footer({
 										target="_blank"
 										rel="noopener noreferrer"
 										title={label}
-										className="text-muted-foreground transition-colors hover:text-cyan-500"
+										className="text-zinc-600 dark:text-zinc-400 transition-colors hover:text-cyan-600 dark:hover:text-cyan-400"
 									>
 										<SocialIcon
 											platform={link.platform}
@@ -75,15 +75,15 @@ function Footer({
 					</nav>
 				</div>
 
-				<div className="mt-8 border-t border-border pt-4">
-					<div className="flex flex-col gap-2 text-xs text-muted-foreground md:flex-row md:items-center md:justify-between oswald">
+				<div className="mt-8 border-t border-zinc-200 dark:border-zinc-800 pt-6">
+					<div className="flex flex-col gap-2 text-xs text-zinc-600 dark:text-zinc-400 md:flex-row md:items-center md:justify-between oswald">
 						<span>
 							© {year} Ravish Ranjan. All rights reserved.
 						</span>
 						{showContact ? (
 							<a
 								href={contactHref}
-								className="inline-flex items-center gap-1 transition-colors hover:text-blue-600"
+								className="inline-flex items-center gap-1 transition-colors hover:text-cyan-600 dark:hover:text-cyan-400 font-medium"
 							>
 								<Mail
 									className="h-3.5 w-3.5"

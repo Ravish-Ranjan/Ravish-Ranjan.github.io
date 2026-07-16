@@ -3,114 +3,133 @@
 		"title": "Micro-ESP",
 		"link": "https://github.com/Ravish-Ranjan/micro-esp",
 		"image": "/media/micro-esp.webp",
-		"description": "A simple firmware micro-kernel for ESP32 NodeMCU board with an interactive shell and file system support."
+		"description": "A simple firmware micro-kernel for ESP32 NodeMCU board with an interactive shell and file system support.",
+		"category": "Open Source"
 	},
 	{
 		"title": "Payme",
 		"link": "https://payme.ravishdev.org",
 		"image": "/media/payme.webp",
-		"description": "A simple, fast, and secure way to generate and share UPI payment links. Generate dynamic payment pages in seconds and share them with anyone, anywhere."
+		"description": "A simple, fast, and secure way to generate and share UPI payment links. Generate dynamic payment pages in seconds and share them with anyone, anywhere.",
+		"category": "Web App"
 	},
 	{
 		"title": "t-serve",
 		"link": "https://www.npmjs.com/package/@ravishranjan/t-serve",
 		"image": "/media/t-serve.webp",
-		"description": "A lightweight, terminal-based service manager for Linux systems using systemctl."
+		"description": "A lightweight, terminal-based service manager for Linux systems using systemctl.",
+		"category": "Package"
 	},
 	{
 		"title": "LogiSick",
 		"link": "https://logisick.ravishdev.org",
 		"image": "/media/logisick.webp",
-		"description": "LogiSick is a web-based inventory and logistics management platform designed to streamline supply chain operations."
+		"description": "LogiSick is a web-based inventory and logistics management platform designed to streamline supply chain operations.",
+		"category": "Project"
 	},
 	{
 		"title": "Encode",
 		"link": "https://encode.ravishdev.org",
 		"image": "/media/encode.webp",
-		"description": "A flexible backend API for generating QR codes in various formats, including text, URL, vCard, MeCard, WiFi, email, SMS, telephone, geo location, calendar events, Bitcoin, and UPI."
+		"description": "A flexible backend API for generating QR codes in various formats, including text, URL, vCard, MeCard, WiFi, email, SMS, telephone, geo location, calendar events, Bitcoin, and UPI.",
+		"category": "API"
 	},
 	{
 		"title": "Cart",
 		"link": "https://www.npmjs.com/package/@ravishranjan/cart",
 		"image": "/media/cart.webp",
-		"description": "A lightweight, native frontend cart system with optional React hooks."
+		"description": "A lightweight, native frontend cart system with optional React hooks.",
+		"category": "Package"
 	},
 	{
 		"title": "Resource Monitor",
 		"link": "https://resource-monitor.ravishdev.org/",
 		"image": "/media/resource-monitor.webp",
-		"description": "a light-weight electron-app for your system resource monitoring"
+		"description": "a light-weight electron-app for your system resource monitoring",
+		"category": "Web App"
 	},
 	{
 		"title": "Chiptune",
 		"link": "https://github.com/Ravish-Ranjan/chiptune",
 		"image": "/media/chiptune.webp",
-		"description": "A real-time software-based audio synthesis engine written in C++."
+		"description": "A real-time software-based audio synthesis engine written in C++.",
+		"category": "Project"
 	},
 	{
 		"title": "Dashboard",
 		"link": "https://ravishdev.org/dashboard",
 		"image": "/media/dashboard.webp",
-		"description": "a web app to be used as a smart display "
+		"description": "a web app to be used as a smart display ",
+		"category": "Web App"
 	},
 	{
 		"title": "TraveGenie",
 		"link": "https://travelgenie-q8d3-9v1knyd0o-ravish-ranjans-projects.vercel.app",
 		"image": "/media/travelGenie.webp",
-		"description": "an AI based travel itinerary generator"
+		"description": "an AI based travel itinerary generator",
+		"category": "Project"
 	},
 	{
 		"title": "Notes",
 		"link": "https://notes-qgg5.onrender.com",
 		"image": "/media/notes.webp",
-		"description": "an full-stack(MERN) notes web PWA app"
+		"description": "an full-stack(MERN) notes web PWA app",
+		"category": "Web App"
 	},
 	{
 		"title": "Melody",
 		"link": "https://github.com/Ravish-Ranjan/melody",
 		"image": "/media/melody.webp",
-		"description": "place to rate your favorite songs and see it climb leaderboard"
+		"description": "place to rate your favorite songs and see it climb leaderboard",
+		"category": "Project"
 	},
 	{
 		"title": "Qrcode maker",
 		"link": "https://ravishdev.org/qrcode/",
 		"image": "/media/qrcode.webp",
-		"description": " a site to make and customize your qrcodes"
+		"description": " a site to make and customize your qrcodes",
+		"category": "Tool"
 	},
 	{
 		"title": "Barcode Generator",
 		"link": "https://ravishdev.org/barcode/",
 		"image": "/media/barcode.webp",
-		"description": "website to generate barcode"
+		"description": "website to generate barcode",
+		"category": "Tool"
 	},
 	{
 		"title": "RChats",
 		"link": "https://rchats.onrender.com",
 		"image": "/media/rchats.webp",
-		"description": "an full-stack(MERN) Realtime chat app"
+		"description": "an full-stack(MERN) Realtime chat app",
+		"category": "Web App"
 	},
 	{
 		"title": "Markdown Previewer",
 		"link": "https://ravishdev.org/markdown-previewer/",
 		"image": "/media/markdown-previewer.webp",
-		"description": "website to preview your markdown"
+		"description": "website to preview your markdown",
+		"category": "Tool"
 	},
 	{
 		"title": "Http-Codes",
 		"link": "https://ravishdev.org/http-codes/",
 		"image": "/media/http-codes.webp",
-		"description": "Ai generated image library of http status codes"
+		"description": "Ai generated image library of http status codes",
+		"category": "API"
 	},
 	{
 		"title": "Quotes",
 		"link": "https://ravishdev.org/quotes/",
 		"image": "/media/quotes.webp",
-		"description": "a website for quotes which you can share with others"
+		"description": "a website for quotes which you can share with others",
+		"category": "Project"
 	},
 	{
 		"title": "Fluke",
 		"link": "https://github.com/Ravish-Ranjan/fluke",
 		"image": "/media/fluke.webp",
-		"description": "a platform to watch and download movies and shows"
+		"description": "a platform to watch and download movies and shows",
+		"category": "Web App"
 	}
 ]

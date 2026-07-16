@@ -1,5 +1,5 @@
 "use client";
-import SepHeading from "@/components/SeprateHeading";
+import SeparatorHeading from "@/components/SepratorHeading";
 import Button from "@/components/ui/button";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
@@ -20,7 +20,8 @@ const colourMap: Record<string, string> = {
 	emerald:
 		"bg-emerald-200 text-emerald-900 dark:bg-emerald-800/80 dark:text-white",
 	teal: "bg-teal-200 text-teal-900 dark:bg-teal-800/80 dark:text-white",
-	cyan: "bg-cyan-200 text-cyan-900 dark:bg-cyan-800/80 dark:text-white",
+	primary:
+		"bg-primary-200 text-primary-900 dark:bg-primary-800/80 dark:text-white",
 	sky: "bg-sky-200 text-sky-900 dark:bg-sky-800/80 dark:text-white",
 	blue: "bg-blue-200 text-blue-900 dark:bg-blue-800/80 dark:text-white",
 	indigo: "bg-indigo-200 text-indigo-900 dark:bg-indigo-800/80 dark:text-white",
@@ -31,7 +32,7 @@ const colourMap: Record<string, string> = {
 	pink: "bg-pink-200 text-pink-900 dark:bg-pink-800/80 dark:text-white",
 	rose: "bg-rose-200 text-rose-900 dark:bg-rose-800/80 dark:text-white",
 	slate: "bg-slate-200 text-slate-900 dark:bg-slate-800/80 dark:text-white",
-	gray: "bg-gray-200 text-gray-900 dark:bg-gray-800/80 dark:text-white",
+	gray: "bg-zinc-200 text-zinc-900 dark:bg-zinc-800/80 dark:text-white",
 	zinc: "bg-zinc-200 text-zinc-900 dark:bg-zinc-800/80 dark:text-white",
 	neutral:
 		"bg-neutral-200 text-neutral-900 dark:bg-neutral-800/80 dark:text-white",
@@ -77,9 +78,9 @@ function Skills() {
 	return (
 		<div
 			id="skills"
-			className=" flex flex-col justify-start items-center gap-8 min-h-66"
+			className="flex flex-col justify-start items-center gap-8 min-h-66"
 		>
-			<SepHeading>Skills</SepHeading>
+			<SeparatorHeading>Skills</SeparatorHeading>
 			<div className="flex flex-wrap justify-center gap-2 max-w-4xl oswald">
 				{tags.map((val) => {
 					return (
@@ -87,14 +88,14 @@ function Skills() {
 							key={val}
 							variant={selected == val ? "default" : "outline"}
 							onClick={() => setSelected(val)}
-							className="cursor-pointer text-sm"
+							className="cursor-pointer text-sm font-medium"
 						>
 							{val}
 						</Button>
 					);
 				})}
 			</div>
-			<div className="flex flex-wrap gap-2 justify-center oswald-400 max-w-4xl">
+			<div className="flex flex-wrap gap-3 justify-center oswald-400 max-w-4xl">
 				{skillsList.flatMap((val, i) =>
 					val.skills.map((skl, j) => (
 						<SkillBubble

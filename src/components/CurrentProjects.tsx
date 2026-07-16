@@ -1,5 +1,5 @@
 import CurProj from "@/components/CurrentProjectCard";
-import SepHeading from "@/components/SeprateHeading";
+import SeparatorHeading from "@/components/SepratorHeading";
 import { useEffect, useState } from "react";
 
 function Current() {
@@ -14,9 +14,9 @@ function Current() {
 	}, []);
 	if (!currentProjects) return null;
 	return (
-		<div id="current" className="grid place-items-center">
-			<SepHeading>Currently Working On</SepHeading>
-			<div className="flex flex-wrap items-stretch justify-center gap-3 px-4">
+		<div id="current" className="section-container">
+			<SeparatorHeading>Currently Working On</SeparatorHeading>
+			<div className="flex flex-wrap items-stretch justify-center gap-4 w-full">
 				{currentProjects.map((val) => {
 					return <CurProj project={val} key={val.id} />;
 				})}

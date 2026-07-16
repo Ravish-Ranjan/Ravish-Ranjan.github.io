@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
-import SepHeading from "../../components/SeprateHeading";
-import SinProject from "../../components/SingleProject";
+import SeparatorHeading from "../../components/SepratorHeading";
+import ProjectCard from "../../components/ProjectCard";
 
 function Page() {
 	const [projects, setProjects] = useState<null | ProjectType[]>(null);
@@ -15,10 +15,10 @@ function Page() {
 	if (!projects) return null;
 	return (
 		<>
-			<SepHeading>All Projects</SepHeading>
+			<SeparatorHeading>All Projects</SeparatorHeading>
 			<div className="flex flex-wrap justify-center items-center gap-4 p-4">
 				{projects.map((val) => {
-					return <SinProject project={val} key={val.title} />;
+					return <ProjectCard project={val} key={val.title} />;
 				})}
 			</div>
 		</>
