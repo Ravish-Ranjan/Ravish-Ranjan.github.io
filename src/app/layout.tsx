@@ -10,9 +10,12 @@ import { Inter, Noto_Serif } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
-const notoSerifHeading = Noto_Serif({subsets:['latin'],variable:'--font-heading'});
+const notoSerifHeading = Noto_Serif({
+	subsets: ["latin"],
+	variable: "--font-heading",
+});
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
 	title: "Portfolio | Ravish Ranjan",
@@ -38,7 +41,7 @@ export default function RootLayout({
 				notoSerifHeading.variable,
 			)}
 		>
-			<body className="min-h-screen bg-zinc-200 dark:bg-zinc-900">
+			<body className="min-h-screen bg-white dark:bg-zinc-900">
 				<ThemeProvider>
 					<TooltipProvider>
 						<SidebarProvider
@@ -50,7 +53,7 @@ export default function RootLayout({
 							<Footer />
 						</SidebarProvider>
 					</TooltipProvider>
-					<StarsBackground className="-z-20 bg-zinc-200 dark:bg-zinc-900 h-full" />
+					<StarsBackground className="-z-20 bg-white dark:bg-zinc-900 h-full" />
 					<ShootingStars className="-z-10 min-h-screen" />
 				</ThemeProvider>
 			</body>

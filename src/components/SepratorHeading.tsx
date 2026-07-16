@@ -1,6 +1,6 @@
-import { H2 } from "@/components/ui/Typography";
+import { H2 } from "./ui/Typography";
 
-function SepHeading({ children }: { children: string }) {
+function SeparatorHeading({ children }: { children: string }) {
 	return (
 		<H2 className="relative w-full grid font-normal text-center oswald-font place-items-center">
 			<span className="px-4 text-xl md:text-3xl bg-zinc-200 dark:bg-zinc-900 title-custom oswald">
@@ -11,4 +11,4 @@ function SepHeading({ children }: { children: string }) {
 	);
 }
 
-export default SepHeading;
+export default SeparatorHeading;

@@ -17,68 +17,74 @@ function Navbar() {
 	};
 
 	return (
-		<div className="flex justify-end-safe w-full items-center gap-2 p-2 bg-zinc-200 dark:bg-zinc-800">
-			{pathname !== "/allprojects/" && (
-				<SidebarTrigger
-					className="p-2 h-10 w-10 rounded-xl md:hidden mr-2"
-					variant={"outline"}
-				/>
-			)}
-			<div className="gap-1 flex group oswald ">
+		<div className="flex justify-between w-full items-center gap-4 px-4 py-3 bg-zinc-50 dark:bg-zinc-900/50 border-b border-zinc-200 dark:border-zinc-800 sticky top-0 z-40 backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
+			<div className="flex items-center gap-2">
+				{pathname !== "/allprojects/" ? (
+					<SidebarTrigger
+						className="p-2 h-10 w-10 rounded-lg md:hidden"
+						variant={"ghost"}
+					/>
+				) : (
+					<div className="w-8"></div>
+				)}
+			</div>
+			<nav
+				className={`md:flex gap-1 group oswald items-center ${pathname === "/allprojects/" ? "" : "hidden"}`}
+			>
 				{pathname === "/allprojects/" ? (
 					<Button
-						variant={"link"}
+						variant={"ghost"}
 						onClick={() => router.push("/")}
-						className="text-teal-800 dark:text-teal-300 cursor-pointer"
+						className="text-cyan-600 hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300 cursor-pointer font-medium text-center"
 					>
 						Home Page
 					</Button>
 				) : (
 					<>
 						<Button
-							variant={"link"}
+							variant={"ghost"}
 							onClick={() => handleScrollTo("current")}
-							className="text-teal-800 dark:text-teal-300 cursor-pointer hidden md:flex"
+							className="text-cyan-600 hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300 cursor-pointer font-medium"
 						>
 							Current Work
 						</Button>
 						<Button
-							variant={"link"}
+							variant={"ghost"}
 							onClick={() => handleScrollTo("about")}
-							className="text-teal-800 dark:text-teal-300 cursor-pointer hidden md:flex"
+							className="text-cyan-600 hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300 cursor-pointer font-medium"
 						>
 							About Me
 						</Button>
 						<Button
-							variant={"link"}
+							variant={"ghost"}
 							onClick={() => handleScrollTo("skills")}
-							className="text-teal-800 dark:text-teal-300 cursor-pointer hidden md:flex"
+							className="text-cyan-600 hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300 cursor-pointer font-medium"
 						>
 							Skills
 						</Button>
 						<Button
-							variant={"link"}
+							variant={"ghost"}
 							onClick={() => handleScrollTo("projects")}
-							className="text-teal-800 dark:text-teal-300 cursor-pointer hidden md:flex"
+							className="text-cyan-600 hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300 cursor-pointer font-medium"
 						>
 							Projects
 						</Button>
 						<Button
-							variant={"link"}
-							className="text-teal-800 dark:text-teal-300 cursor-pointer hidden md:flex"
+							variant={"ghost"}
+							className="text-cyan-600 hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300 cursor-pointer font-medium"
 						>
 							<Link href={"/allprojects"}>All Projects</Link>
 						</Button>
 						<Button
-							variant={"link"}
+							variant={"ghost"}
 							onClick={() => handleScrollTo("contact")}
-							className="text-teal-800 dark:text-teal-300 cursor-pointer hidden md:flex"
+							className="text-cyan-600 hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300 cursor-pointer font-medium"
 						>
 							Contact
 						</Button>
 					</>
 				)}
-			</div>
+			</nav>
 			<ThemeToggle />
 		</div>
 	);

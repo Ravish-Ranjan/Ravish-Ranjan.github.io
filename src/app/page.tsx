@@ -46,7 +46,7 @@ export default function Home() {
 			{showScrollTop && (
 				<button
 					onClick={scrollToTop}
-					className="fixed bottom-8 right-8 p-3 bg-cyan-700 hover:bg-cyan-800 text-white rounded-full shadow-lg transition-all hover:scale-110 z-50"
+					className="fixed bottom-8 right-8 p-3 bg-linear-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white rounded-full shadow-lg transition-all hover:scale-110 z-50"
 					aria-label="Scroll to top"
 				>
 					<GoUp className="w-6 h-6" />
