@@ -1,29 +1,103 @@
-name: nextjs building
+name: Deploy
 
 on:
-    push:
-        branches: [develop]
-    workflow_dispatch:
+  push:
+    branches:
+      - develop
+  workflow_dispatch:
 
 jobs:
-    build-deploy:
-        runs-on: ubuntu-latest
-        permissions:
-            contents: write
-        steps:
-            - uses: actions/checkout@v4
+  detect:
+    runs-on: ubuntu-latest
 
-            - uses: actions/setup-node@v4
-              with:
-                  node-version: 22
-                  cache: "npm"
+    outputs:
+      code: ${{ steps.filter.outputs.code }}
+      config: ${{ steps.filter.outputs.config }}
 
-            - run: npm ci
-            - run: npm run build
-            - run: touch ./out/.nojekyll
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-            - uses: peaceiris/actions-gh-pages@v3
-              with:
-                  github_token: ${{ secrets.GITHUB_TOKEN }}
-                  publish_dir: ./out
-                  publish_branch: release
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            code:
+              - '**'
+              - '!public/config/**'
+
+            config:
+              - 'public/config/**'
+
+  build:
+    needs: detect
+    if: needs.detect.outputs.code == 'true'
+
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+      - run: touch out/.nojekyll
+
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          publish_branch: release
+
+  update-config:
+    needs: detect
+
+    if: needs.detect.outputs.code != 'true' && needs.detect.outputs.config == 'true'
+
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout develop
+        uses: actions/checkout@v4
+        with:
+          path: source
+
+      - name: Checkout release
+        uses: actions/checkout@v4
+        with:
+          ref: release
+          path: release
+
+      - name: Copy config
+        run: |
+          rm -rf release/config
+          mkdir -p release/config
+          cp -r source/public/config/* release/config/
+
+      - name: Commit & Push
+        run: |
+          cd release
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add config
+
+          if git diff --cached --quiet; then
+            echo "No config changes"
+            exit 0
+          fi
+
+          git commit -m "Update config"
+          git push
