@@ -1,0 +1,132 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://ravishdev.org/#person",
+      "name": "Ravish Ranjan",
+      "url": "https://ravishdev.org",
+      "image": {
+        "@id": "https://ravishdev.org/#profile-image"
+      },
+      "jobTitle": "Full-Stack Developer",
+      "description":
+        "Computer Science student and Full-Stack Developer specializing in modern web technologies, embedded systems, AI, and open-source software.",
+      "email": "mailto:contact@ravishdev.org",
+      "worksFor": {
+        "@id": "https://ravishdev.org/#organization"
+      },
+      "sameAs": [
+        "https://github.com/Ravish-Ranjan",
+        "https://linkedin.com/in/ravish-ranjan-dev"
+      ],
+      "knowsAbout": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "MySQL",
+        "Tailwind CSS",
+        "Git",
+        "REST API",
+        "Electron",
+        "React Native",
+        "Expo",
+        "Python",
+        "C++"
+      ]
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://ravishdev.org/#organization",
+      "name": "Ravish Dev",
+      "url": "https://ravishdev.org",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://ravishdev.org/#logo",
+        "url": "https://ravishdev.org/logo.svg"
+      },
+      "founder": {
+        "@id": "https://ravishdev.org/#person"
+      }
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://ravishdev.org/#website",
+      "url": "https://ravishdev.org",
+      "name": "Ravish Dev",
+      "publisher": {
+        "@id": "https://ravishdev.org/#organization"
+      },
+      "inLanguage": "en"
+    },
+
+    {
+      "@type": "ProfilePage",
+      "@id": "https://ravishdev.org/#webpage",
+      "url": "https://ravishdev.org",
+      "name": "Portfolio | Ravish Ranjan",
+      "description":
+        "Portfolio of Ravish Ranjan showcasing projects, skills, experience, and contact information.",
+      "isPartOf": {
+        "@id": "https://ravishdev.org/#website"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://ravishdev.org/#hero-image"
+      },
+      "mainEntity": {
+        "@id": "https://ravishdev.org/#person"
+      }
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://ravishdev.org/#hero-image",
+      "url": "https://ravishdev.org/heroillus.svg",
+      "caption": "Ravish Ranjan Hero Illustration"
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://ravishdev.org/#profile-image",
+      "url": "https://ravishdev.org/profile.webp"
+    },
+
+    {
+      "@type": "ContactPoint",
+      "@id": "https://ravishdev.org/#contact",
+      "contactType": "Professional",
+      "email": "contact@ravishdev.org",
+      "url": "https://ravishdev.org/#contact",
+      "availableLanguage": [
+        "English",
+        "Hindi"
+      ]
+    },
+
+    {
+      "@type": "SiteNavigationElement",
+      "name": [
+        "Current Work",
+        "About Me",
+        "Skills",
+        "Projects",
+        "All Projects",
+        "Contact"
+      ],
+      "url": [
+        "https://ravishdev.org/#current-work",
+        "https://ravishdev.org/#about",
+        "https://ravishdev.org/#skills",
+        "https://ravishdev.org/#projects",
+        "https://ravishdev.org/allprojects",
+        "https://ravishdev.org/#contact"
+      ]
+    }
+  ]
+}

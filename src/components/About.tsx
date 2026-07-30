@@ -24,7 +24,7 @@ const skills = [
 function Marq({ rev = false }: { rev?: boolean }) {
 	const skls = rev ? [...skills].reverse() : skills;
 	return (
-		<div
+		<section
 			className={clsx(
 				"flex w-full justify-center gap-2 py-1 flex-wrap overflow-y-hidden h-10",
 				"bg-linear-to-r bg-[linear-gradient(to_right,transparent_0%,var(--color-zinc-400)_20%,var(--color-zinc-400)_80%,transparent_100%)]",
@@ -39,7 +39,7 @@ function Marq({ rev = false }: { rev?: boolean }) {
 					{val}
 				</Small>
 			))}
-		</div>
+		</section>
 	);
 }
 

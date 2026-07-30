@@ -11,7 +11,7 @@ import Button from "@/components/ui/button";
 
 function Contact() {
 	return (
-		<div id="contact" className="section-container">
+		<section id="contact" className="section-container">
 			<SeparatorHeading>Contact</SeparatorHeading>
 			<div className="max-w-11/12 container mx-auto">
 				{/* heading */}
@@ -101,7 +101,7 @@ function Contact() {
 					</Card>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }
 

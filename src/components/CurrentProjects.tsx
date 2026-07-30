@@ -14,14 +14,14 @@ function Current() {
 	}, []);
 	if (!currentProjects) return null;
 	return (
-		<div id="current" className="section-container">
+		<section id="current" className="section-container">
 			<SeparatorHeading>Currently Working On</SeparatorHeading>
 			<div className="flex flex-wrap items-stretch justify-center gap-4 w-full">
 				{currentProjects.map((val) => {
 					return <CurProj project={val} key={val.id} />;
 				})}
 			</div>
-		</div>
+		</section>
 	);
 }
 

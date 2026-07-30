@@ -9,6 +9,7 @@ import { ShootingStars } from "@/components/ui/shooting-start";
 import { Inter, Noto_Serif } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import schema from "@/assets/siteschema.json"
 
 const notoSerifHeading = Noto_Serif({
 	subsets: ["latin"],
@@ -41,6 +42,14 @@ export default function RootLayout({
 				notoSerifHeading.variable,
 			)}
 		>
+			<head>
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify(schema),
+					}}
+				/>
+			</head>
 			<body className="min-h-screen bg-white dark:bg-zinc-900">
 				<ThemeProvider>
 					<TooltipProvider>
