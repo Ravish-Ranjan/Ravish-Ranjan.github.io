@@ -19,7 +19,7 @@ function Hero() {
 	];
 
 	return (
-		<div className="relative min-h-screen flex items-center justify-center px-4 py-12 md:py-0">
+		<main className="relative min-h-screen flex items-center justify-center px-4 py-12 md:py-0">
 			<div className="oswald w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
 				{/* Left content */}
 				<div className="space-y-6 md:space-y-8 transition-all duration-1000">
@@ -153,7 +153,7 @@ function Hero() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
 	);
 }
 

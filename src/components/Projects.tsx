@@ -18,7 +18,7 @@ function Projects({ all = false }: { all?: boolean }) {
 	if (!allProjects) return null;
 	const projects = all ? allProjects : allProjects.slice(0, 8);
 	return (
-		<div id="projects" className="grid place-items-center">
+		<section id="projects" className="grid place-items-center">
 			<SeparatorHeading>Projects</SeparatorHeading>
 			<div className="flex flex-wrap items-center justify-center gap-4 w-full">
 				{projects.map((val) => {
@@ -33,7 +33,7 @@ function Projects({ all = false }: { all?: boolean }) {
 					View More
 				</Link>
 			</Small>
-		</div>
+		</section>
 	);
 }
 

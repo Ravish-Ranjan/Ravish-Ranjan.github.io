@@ -76,7 +76,7 @@ function Skills() {
 	const tags = ["All", ...skillsList.map((val) => val.label)];
 
 	return (
-		<div
+		<section
 			id="skills"
 			className="flex flex-col justify-start items-center gap-8 min-h-66"
 		>
@@ -109,7 +109,7 @@ function Skills() {
 					)),
 				)}
 			</div>
-		</div>
+		</section>
 	);
 }
 
