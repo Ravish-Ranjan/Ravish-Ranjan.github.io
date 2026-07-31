@@ -8,13 +8,7 @@
   </url>
   <url>
     <loc>https://rchats.ravishdev.org</loc>
-    <lastmod>2025-08-2</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://notes-qgg5.onrender.com</loc>
-    <lastmod>2025-08-22</lastmod>
+    <lastmod>2025-08-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -31,12 +25,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://travelgenie-q8d3-9v1knyd0o-ravish-ranjans-projects.vercel.app</loc>
-    <lastmod>2025-02-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://github.com/Ravish-Ranjan/melody</loc>
     <lastmod>2025-02-27</lastmod>
     <changefreq>yearly</changefreq>
@@ -44,7 +32,7 @@
   </url>
   <url>
     <loc>https://github.com/Ravish-Ranjan/fluke</loc>
-    <lastmod>2024-07-7</lastmod>
+    <lastmod>2024-07-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -80,7 +68,7 @@
   </url>
   <url>
     <loc>https://github.com/Ravish-Ranjan</loc>
-    <lastmod></lastmod>
+    <lastmod>2022-01-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
