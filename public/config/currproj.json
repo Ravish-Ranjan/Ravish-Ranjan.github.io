@@ -1,19 +1,21 @@
 [
 	{
 		"id": "1",
-		"title": "Micro-ESP",
-		"description": "A simple firmware micro-kernel for ESP32 NodeMCU board with an interactive shell and file system support. This micro-kernel is built using ESP-IDF tool, specially designed for NodeMCU ESP32 board.",
+		"title": "Carvaan Desktop",
+		"description": "A desktop application for managing a local music library and preparing synchronized music collections for Android devices (for example, Saregama-style offline music workflows).",
 		"status": "In Progress",
 		"technologies": [
-			"ESP-IDF",
-			"C",
-			"SPIFFS",
+			"C++",
+			"WebKit",
+			"Linux",
+   "ADB",
 			"CMake",
-			"Node-MCU32"
+			"React",
+   "Zustand"
 		],
-		"progress": 75,
-		"githubUrl": "https://github.com/Ravish-Ranjan/micro-esp",
-		"startDate": "2026-06-07",
-		"estimatedCompletion": "2026-10-31"
+		"progress": 70,
+		"githubUrl": "https://github.com/Ravish-Ranjan/carvaan-desktop",
+		"startDate": "2026-09-20",
+		"estimatedCompletion": "2027-01-15"
 	}
 ]
